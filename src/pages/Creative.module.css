@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=IBM+Plex+Mono:wght@300;400;500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap");
+
+.page {
+  min-height: 100vh;
+  background: #f4f1eb;
+  color: #1a1814;
+  font-family: "Lora", serif;
+  padding: 80px 48px 120px;
+  max-width: 860px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── FOUND ── */
+.found {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #9a9080;
+  margin-bottom: 64px;
+}
+
+/* ── HERO ── */
+.hero {
+  margin-bottom: 72px;
+}
+
+.heroEyebrow {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #9a9080;
+  margin-bottom: 20px;
+}
+
+.heroHeading {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(32px, 5vw, 52px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: #1a1814;
+  margin-bottom: 32px;
+}
+
+.heroHeading em {
+  font-style: italic;
+  color: #8b6914;
+}
+
+.heroBio {
+  font-size: 16px;
+  line-height: 1.85;
+  color: #4a4438;
+  margin-bottom: 20px;
+  max-width: 640px;
+}
+
+.heroCta {
+  display: inline-block;
+  margin-top: 12px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8b6914;
+  text-decoration: none;
+  border-bottom: 1px solid #8b6914;
+  padding-bottom: 2px;
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.heroCta:hover {
+  color: #1a1814;
+  border-color: #1a1814;
+}
+
+/* ── DIVIDER ── */
+.divider {
+  height: 1px;
+  background: #d4cfc4;
+  margin: 64px 0;
+}
+
+/* ── WORK ── */
+.workSection {
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.workGroupLabel {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #9a9080;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.workGroupLabel::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #d4cfc4;
+}
+
+.workItems {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.workItem {
+  border-top: 1px solid #d4cfc4;
+  padding: 20px 0;
+  transition: background 0.2s;
+}
+
+.workItem:last-child {
+  border-bottom: 1px solid #d4cfc4;
+}
+
+.workItemInner {
+  max-width: 640px;
+}
+
+.workTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1814;
+  margin-bottom: 4px;
+  line-height: 1.3;
+}
+
+.workTitle a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.workTitle a:hover {
+  border-color: #8b6914;
+}
+
+.workMeta {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: #9a9080;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.workNote {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #6a6050;
+  font-style: italic;
+}
+
+/* ── FOOTER ── */
+.footerHeading {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1814;
+  margin-bottom: 36px;
+  line-height: 1.3;
+}
+
+.footerItems {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.footerItem {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4a4438;
+  max-width: 580px;
+}
+
+.footerNum {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  color: #8b6914;
+  padding-top: 4px;
+  flex-shrink: 0;
+}
+
+.footerCta {
+  display: inline-block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  color: #1a1814;
+  text-decoration: none;
+  border-bottom: 2px solid #8b6914;
+  padding-bottom: 3px;
+  transition: color 0.2s;
+}
+
+.footerCta:hover {
+  color: #8b6914;
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 48px 24px 80px;
+  }
+}

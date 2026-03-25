@@ -1,0 +1,204 @@
+/* Sidebar.module.css */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.section {
+  padding: 16px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  animation: fadeUp 0.8s ease both;
+}
+
+.sectionLabel {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 18px;
+}
+
+.competencyGroups {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.competencyGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.groupTitle {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #6a6864;
+}
+
+.competencyList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 7.5px;
+}
+
+.competencyItem {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background: var(--bg3);
+  border-left: 2px solid var(--border-accent);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition:
+    border-color 0.2s,
+    color 0.2s,
+    transform 0.2s;
+}
+
+.competencyItem:hover {
+  transform: translateY(-1px);
+}
+
+/* One color per group */
+.competencyGroup:nth-child(1) .competencyItem {
+  border-left-color: #c8b87a;
+  color: #c8b87a;
+  background: rgba(200, 184, 122, 0.06);
+}
+
+/* 2-column grid for Engineering only */
+.competencyGroup:nth-child(1) .competencyList {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.competencyGroup:nth-child(2) .competencyItem {
+  border-left-color: #8ba89e;
+  color: #8ba89e;
+  background: rgba(139, 168, 158, 0.06);
+}
+
+.competencyGroup:nth-child(3) .competencyItem {
+  border-left-color: #a08cba;
+  color: #a08cba;
+  background: rgba(160, 140, 186, 0.06);
+}
+
+/* 2-column grid for Systems & Product only */
+.competencyGroup:nth-child(3) .competencyList {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.competencyGroup:nth-child(4) .competencyItem {
+  border-left-color: #c0604a;
+  color: #c0604a;
+  background: rgba(192, 96, 74, 0.06);
+}
+
+.competencyGroup:nth-child(5) .competencyItem {
+  border-left-color: #7a9aba;
+  color: #7a9aba;
+  background: rgba(122, 154, 186, 0.06);
+}
+
+/* 2-column grid for Creative & Media only */
+.competencyGroup:nth-child(5) .competencyList {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.clearance {
+  border-color: rgba(192, 96, 74, 0.4);
+  color: #c87a6a;
+}
+
+.lang {
+  border-color: rgba(139, 168, 158, 0.4);
+  color: var(--accent2);
+}
+
+.eduEntry {
+  margin-bottom: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--border);
+}
+
+.eduEntry:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.eduSchool {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.eduDegree {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin-bottom: 3px;
+}
+
+.eduDates {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+.eduHonor {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+  margin-top: 3px;
+}
+
+.targetingText {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
+.targetingText strong {
+  color: var(--text);
+}
+
+.targetingMeta {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-dim);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .competencyList {
+    grid-template-columns: 1fr;
+  }
+}

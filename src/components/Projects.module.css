@@ -1,0 +1,221 @@
+.section {
+  margin-bottom: 56px;
+  animation: fadeUp 0.8s ease both;
+}
+.sectionLabel {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.sectionLabel::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+.card {
+  padding: 20px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  margin-bottom: 12px;
+  transition:
+    border-color 0.2s,
+    background 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+.card:hover {
+  border-color: var(--border-accent);
+  background: var(--bg3);
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.card:hover::before {
+  opacity: 1;
+}
+.cardName {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+  letter-spacing: 0.02em;
+}
+.cardDesc {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.cardContent {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  gap: 28px;
+  align-items: center;
+}
+
+.projectName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  letter-spacing: 0.5px;
+}
+
+.text {
+  max-width: 680px;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.preview img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+  opacity: 0.95;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    filter 0.25s ease;
+}
+
+.preview img:hover {
+  transform: translateY(-3px) scale(1.02);
+  opacity: 1;
+  border-color: var(--border-accent);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+  filter: brightness(1.05);
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 10px;
+}
+.tag {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  color: var(--text-muted);
+}
+
+/* Make sure to edit const getTagClass in Projects.jsx if adding */
+/* Frontend */
+.tagReact {
+  border-color: rgba(97, 218, 251, 0.4);
+  color: #61dafb;
+}
+
+.tagJavaScript {
+  border-color: rgba(247, 223, 30, 0.4);
+  color: #f7df1e;
+}
+
+.tagCSS {
+  border-color: rgba(86, 61, 124, 0.4);
+  color: #8b78c6;
+}
+
+/* Backend */
+.tagNode {
+  border-color: rgba(104, 160, 99, 0.603);
+  color: #5fbb57;
+}
+
+.tagExpress {
+  border-color: rgba(200, 200, 200, 0.3);
+  color: #cccccc;
+}
+
+.tagPostgreSQL {
+  border-color: rgba(49, 99, 140, 0.4);
+  color: #31638c;
+}
+
+/* Other */
+.tagUIUX {
+  border-color: rgba(255, 0, 0, 0.4);
+  color: #ff0000;
+}
+.tagGameMechanics {
+  border-color: rgba(195, 0, 255, 0.4);
+  color: #e100ff;
+}
+.tagMilitary {
+  border-color: rgba(39, 231, 0, 0.4);
+  color: #09ff00;
+}
+
+/* Generic fallback */
+.tagDefault {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+.projectLink {
+  font-style: italic;
+  color: #c8b87a;
+  display: inline-block; /* needed for transform */
+}
+
+.projectLink:hover {
+  color: #e0d29a;
+  transform: translateY(-1px);
+}
+.link {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #c8b87a;
+  text-decoration: none;
+  transition: letter-spacing 0.2s;
+}
+.link:hover {
+  letter-spacing: 0.14em;
+}
+.status {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  font-style: italic;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
