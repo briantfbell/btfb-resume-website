@@ -219,3 +219,12 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .cardName {
+    font-size: 12px;
+  }
+  .cardDesc {
+    font-size: 11px;
+  }
+}

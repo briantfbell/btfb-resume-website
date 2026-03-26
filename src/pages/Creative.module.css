@@ -222,6 +222,15 @@
 
 @media (max-width: 768px) {
   .page {
-    padding: 48px 24px 80px;
+    padding: 48px 20px 80px;
+  }
+  .heroHeading {
+    font-size: clamp(26px, 7vw, 36px);
+  }
+  .heroBio {
+    font-size: 14px;
+  }
+  .footerItem {
+    font-size: 14px;
   }
 }

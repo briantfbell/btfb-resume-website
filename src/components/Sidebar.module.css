@@ -201,4 +201,11 @@
   .competencyList {
     grid-template-columns: 1fr;
   }
+  .competencyGroup:nth-child(1) .competencyList,
+  .competencyGroup:nth-child(2) .competencyList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section {
+    padding: 16px;
+  }
 }

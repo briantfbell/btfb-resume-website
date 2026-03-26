@@ -190,3 +190,15 @@
   border-color: var(--accent);
   color: var(--accent);
 }
+
+@media (max-width: 768px) {
+  .page {
+    padding: 24px 16px 80px;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .divider {
+    margin-bottom: 24px;
+  }
+}

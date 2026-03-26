@@ -98,6 +98,16 @@
 
 @media (max-width: 768px) {
   .page {
-    padding: 60px 24px;
+    padding: 60px 20px;
+  }
+  .tagline {
+    font-size: 15px;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .link {
+    width: 100%;
+    justify-content: center;
   }
 }

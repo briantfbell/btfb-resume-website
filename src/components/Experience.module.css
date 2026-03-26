@@ -106,3 +106,22 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .entryHeader {
+    flex-direction: column;
+    gap: 4px;
+  }
+  .entryDates {
+    text-align: left;
+  }
+  .entryOrg {
+    font-size: 12px;
+  }
+  .entryRole {
+    font-size: 13px;
+  }
+  .bullets li {
+    font-size: 12.5px;
+  }
+}
