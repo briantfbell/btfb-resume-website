@@ -24,6 +24,12 @@
   --font-serif: "Inter", sans-serif; /* replace serif */
 }
 
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-y: scroll;
