@@ -41,6 +41,10 @@
   color: var(--text-muted);
   margin-bottom: 28px;
 }
+.subtitleBreak {
+  display: inline;
+}
+
 .badges {
   display: flex;
   flex-wrap: wrap;
@@ -209,6 +213,10 @@
     white-space: normal;
     word-break: break-word;
     width: 100%;
+  }
+
+  .subtitleBreak {
+    display: block;
   }
 
   .badges {

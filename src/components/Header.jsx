@@ -10,8 +10,11 @@ function Header() {
         Brian Thomas Fernandez <span>Bell</span>
       </h1>
       <div className={styles.subtitle}>
-        U.S. Army 37A | Psychological Operations Officer · Software Developer ·
-        Transitioning in 2027
+        U.S. Army 37A | Psychological Operations Officer
+        <span className={styles.subtitleBreak}>
+          {" "}
+          Software Developer · Transitioning in 2027
+        </span>
       </div>
 
       <div className={styles.badges}>
