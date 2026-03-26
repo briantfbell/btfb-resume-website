@@ -116,6 +116,8 @@
     text-align: left;
   }
   .entryOrg {
+    white-space: normal;
+    word-break: break-word;
     font-size: 12px;
   }
   .entryRole {

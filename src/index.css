@@ -1,3 +1,13 @@
+html {
+  overflow-x: clip;
+  max-width: 100vw;
+}
+
+body {
+  overflow-x: clip;
+  max-width: 100vw;
+}
+
 *,
 *::before,
 *::after {
@@ -19,9 +29,9 @@
   --accent2: #8ba89e;
   --accent-glow: rgba(200, 184, 122, 0.12);
   --red: #c0604a;
-  --font-display: "Inter", sans-serif;
+  --font-display: "Syne", sans-serif;
   --font-mono: "DM Mono", monospace; /* keep this */
-  --font-serif: "Inter", sans-serif; /* replace serif */
+  --font-serif: "Instrument Serif", serif;
 }
 
 html,

@@ -198,14 +198,17 @@
 }
 
 @media (max-width: 768px) {
-  .competencyList {
-    grid-template-columns: 1fr;
+  .competencyItem {
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    font-size: 10px;
   }
   .competencyGroup:nth-child(1) .competencyList,
   .competencyGroup:nth-child(2) .competencyList {
     grid-template-columns: repeat(2, 1fr);
   }
-  .section {
-    padding: 16px;
+  .competencyList {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
