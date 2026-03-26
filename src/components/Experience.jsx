@@ -7,8 +7,8 @@ function Experience() {
   return (
     <section className={styles.section}>
       <div className={styles.sectionLabel}>Experience</div>
-      {experience.map((entry) => (
-        <div key={entry.org} className={styles.entry}>
+      {experience.map((entry, index) => (
+        <div key={index} className={styles.entry}>
           <div className={styles.entryHeader}>
             <div className={styles.entryOrg}>
               {entry.org}

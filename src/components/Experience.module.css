@@ -108,22 +108,27 @@
 }
 
 @media (max-width: 768px) {
-  .entryHeader {
-    flex-direction: column;
-    gap: 4px;
-  }
-  .entryDates {
-    text-align: left;
-  }
   .entryOrg {
     white-space: normal;
     word-break: break-word;
     font-size: 12px;
+    letter-spacing: 0.01em;
   }
+
   .entryRole {
     font-size: 13px;
   }
+
   .bullets li {
     font-size: 12.5px;
+  }
+
+  .entryDates {
+    font-size: 11px;
+    text-align: left;
+  }
+
+  .section {
+    margin-bottom: 32px;
   }
 }

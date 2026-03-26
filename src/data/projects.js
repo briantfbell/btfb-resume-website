@@ -6,7 +6,7 @@ export const projects = [
     tags: ["Military", "Leadership", "Operations", "Doctrine", "Logistics"],
     status: "Published Apr 2020 — Adopted into Logistics BOLC",
     link: "https://drive.google.com/file/d/1D9ayxTWv3zz3hxZnt9V8JAGtke3VhXvQ/view?usp=sharing",
-    images: ["/public/mco_guide_image.png"],
+    images: ["/mco_guide_image.png"],
   },
   {
     name: "MW2 Heartbeat Sensor | Prototype",
@@ -15,7 +15,7 @@ export const projects = [
     tags: ["Military", "JavaScript", "React", "Node.js", "CSS Animation"],
     status: "In progress - GitHub link coming",
     link: "",
-    images: ["/public/mw2_prototype_image.png"],
+    images: ["/mw2_prototype_image.png"],
   },
   {
     name: "Escape from Tarkov: Gym Trainer",
@@ -24,7 +24,7 @@ export const projects = [
     tags: ["Game Mechanics", "React", "JavaScript", "UI/UX"],
     status: "In progress",
     link: "https://github.com/briantfbell/tarkov-gym-practice",
-    images: ["/public/tarkov_gym_trainer_image.png"],
+    images: ["/tarkov_gym_trainer_image.png"],
   },
   {
     name: "NGLS Tactical Soundboard | Prototype",
@@ -33,6 +33,6 @@ export const projects = [
     tags: ["Military", "React", "JavaScript", "UI/UX", "Embedded Systems"],
     status: "In progress - GitHub link coming",
     link: "",
-    images: ["/public/ngls_prototype_image.png"],
+    images: ["/ngls_prototype_image.png"],
   },
 ];
