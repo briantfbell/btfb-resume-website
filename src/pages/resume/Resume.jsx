@@ -1,5 +1,5 @@
-import Experience from "../components/Experience";
-import Sidebar from "../components/Sidebar";
+import Experience from "../../components/Experience";
+import Sidebar from "../../components/Sidebar";
 import styles from "./Resume.module.css";
 
 function Resume() {

@@ -1,0 +1,14 @@
+{
+  "name": "Brian Bell",
+  "short_name": "BTFB",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0d0d0f",
+  "background_color": "#0d0d0f",
+  "display": "standalone"
+}

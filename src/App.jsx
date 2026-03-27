@@ -1,10 +1,15 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Home.jsx";
 import PortfolioLayout from "./pages/PortfolioLayout.jsx";
-import Resume from "./pages/Resume.jsx";
-import ProjectsPage from "./pages/Projects.jsx";
-import Summary from "./pages/Summary.jsx";
-import Creative from "./pages/Creative.jsx";
+import Resume from "./pages/resume/Resume.jsx";
+import ProjectsPage from "./pages/resume/Projects.jsx";
+import Summary from "./pages/resume/Summary.jsx";
+import CreativeLayout from "./pages/creative/CreativeLayout.jsx";
+import CreativeLanding from "./pages/creative/CreativeLanding.jsx";
+import Work from "./pages/creative/Work.jsx";
+import Ask from "./pages/creative/Ask.jsx";
+import Plan from "./pages/creative/Plan.jsx";
+import Other from "./pages/creative/Other.jsx";
 import PasswordGate from "./components/PasswordGate";
 
 function App() {
@@ -26,7 +31,13 @@ function App() {
           <Route path="projects" element={<ProjectsPage />} />
         </Route>
 
-        <Route path="creative" element={<Creative />} />
+        <Route path="creative" element={<CreativeLayout />}>
+          <Route index element={<CreativeLanding />} />
+          <Route path="work" element={<Work />} />
+          <Route path="ask" element={<Ask />} />
+          <Route path="plan" element={<Plan />} />
+          <Route path="other" element={<Other />} />
+        </Route>
 
         <Route path="*" element={<Navigate to="/resume" replace />} />
       </Routes>

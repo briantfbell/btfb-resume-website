@@ -1,4 +1,4 @@
-import { summary } from "../data/resume";
+import { summary } from "../../data/resume";
 import styles from "./Summary.module.css";
 
 function Summary() {

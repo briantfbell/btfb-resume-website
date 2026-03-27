@@ -6,32 +6,70 @@
   color: #1a1814;
   font-family: "Lora", serif;
   padding: 80px 48px 120px;
-  max-width: 860px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
 }
 
-/* ── FOUND ── */
-.found {
+.creativeNavHome {
+  padding: 10px 14px;
+  font-size: 16px;
+}
+
+.creativeNav {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.creativeNavBtn {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 10px;
-  letter-spacing: 0.18em;
+  font-size: 11px;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: #9a9080;
-  margin-bottom: 64px;
+  text-decoration: none;
+  border: 1px solid #d4cfc4;
+  padding: 10px 20px;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.creativeNavBtn:hover {
+  color: #1a1814;
+  border-color: #1a1814;
+}
+
+.creativeNavBtnActive {
+  color: #8b6914;
+  border-color: #8b6914;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 640px;
+}
+
+.landingCopy {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  line-height: 1.85;
+  color: #4a4438;
 }
 
 /* ── HERO ── */
 .hero {
-  margin-bottom: 72px;
+  margin-bottom: 48px;
 }
 
 .heroEyebrow {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
+  font-size: 14px;
   letter-spacing: 0.2em;
-  text-transform: uppercase;
   color: #9a9080;
   margin-bottom: 20px;
 }
@@ -56,7 +94,7 @@
   line-height: 1.85;
   color: #4a4438;
   margin-bottom: 20px;
-  max-width: 640px;
+  max-width: 1200px;
 }
 
 .heroCta {
@@ -84,7 +122,7 @@
 .divider {
   height: 1px;
   background: #d4cfc4;
-  margin: 64px 0;
+  margin: 24px 0;
 }
 
 /* ── WORK ── */
@@ -96,7 +134,7 @@
 
 .workGroupLabel {
   font-family: "IBM Plex Mono", monospace;
-  font-size: 10px;
+  font-size: 14px;
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: #9a9080;
@@ -121,7 +159,7 @@
 
 .workItem {
   border-top: 1px solid #d4cfc4;
-  padding: 20px 0;
+  padding: 50px 0;
   transition: background 0.2s;
 }
 
@@ -138,6 +176,7 @@
   font-size: 17px;
   font-weight: 700;
   color: #1a1814;
+  margin-top: 24px;
   margin-bottom: 4px;
   line-height: 1.3;
 }
@@ -167,6 +206,145 @@
   line-height: 1.7;
   color: #6a6050;
   font-style: italic;
+  margin-bottom: 24px;
+}
+
+.workLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── LONG-FORM VIDEO EMBED ── */
+.workGroup {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.workGroupEmbed {
+  grid-template-columns: 1fr 1fr;
+}
+
+.embedColumn {
+  position: sticky;
+  max-width: 380px;
+  width: 100%;
+  padding-top: 46px;
+  margin-left: 82px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.embedWrap {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #1a1814;
+  cursor: pointer;
+}
+
+.embedPlay::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 20px;
+  border-color: transparent transparent transparent #fff;
+  margin-left: 4px;
+}
+
+.embedThumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.iframeHidden {
+  opacity: 0;
+}
+
+.embedWrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  transition: opacity 0.3s ease;
+}
+
+/* ── THE ASK ── */
+.askStatement {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 900px;
+  margin-bottom: 48px;
+}
+
+.askList {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: "Lora", serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #4a4438;
+}
+
+.askListLabel {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8b6914;
+}
+
+/* ── THE ROADMAP ── */
+.roadmapSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  padding: 18px 0;
+}
+
+.roadmapLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.roadmapCopy {
+  font-size: 16px;
+  line-height: 1.85;
+  color: #4a4438;
+  font-family: "Lora", serif;
+}
+
+.roadmapEmbed {
+  max-width: 380px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.askEmbedColumn {
+  max-width: 380px;
+  width: 100%;
+  margin-left: 82px;
 }
 
 /* ── FOOTER ── */
@@ -193,7 +371,7 @@
   font-size: 15px;
   line-height: 1.7;
   color: #4a4438;
-  max-width: 580px;
+  max-width: 1200px;
 }
 
 .footerNum {
@@ -212,6 +390,7 @@
   color: #1a1814;
   text-decoration: none;
   border-bottom: 2px solid #8b6914;
+  padding-top: 50px;
   padding-bottom: 3px;
   transition: color 0.2s;
 }
