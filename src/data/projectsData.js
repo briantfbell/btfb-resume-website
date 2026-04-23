@@ -30,7 +30,7 @@ export const projects = [
       "Vibe-Coded",
     ],
     status: "Live at briantfbell.io",
-    link: "https://briantfbell.io",
+    link: "https://github.com/briantfbell/btfb-resume-website",
     images: ["/Project_Placeholder_Image.png"],
   },
   {
