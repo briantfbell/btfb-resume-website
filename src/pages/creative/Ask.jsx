@@ -113,30 +113,31 @@ function Ask() {
       <div className={styles.divider} />
       <div className={styles.footer}>
         <div className={styles.footerHeading}>
-          I'm interested in three kinds of conversations.
+          If you fall into one of the below categories, let's talk!.
         </div>
         <div className={styles.footerItem}>
           <span className={styles.footerNum}>01</span>
           <span>
-            You back creators who have a point of view and the discipline to
-            execute it - and you want to know what full-time looks like for
-            someone who's been doing this on nights and weekends.
+            You back creators with a clear point of view and proven execution -
+            and you’re interested in what happens when that operator is given
+            the time and resources to scale.
           </span>
         </div>
-
+        <br />
         <div className={styles.footerItem}>
           <span className={styles.footerNum}>02</span>
           <span>
-            You're building something in the creator or media space and need
-            someone who can think strategically and make the thing.
+            You’re building in media or the creator space and need someone who
+            can operate at both the strategic and execution level - someone who
+            can build the thing.
           </span>
         </div>
-
+        <br />
         <div className={styles.footerItem}>
           <span className={styles.footerNum}>03</span>
           <span>
-            You have a weird, obsessive idea and you want to know if it's
-            actually a business.
+            You have a weird, obsessive idea and you want to know if it’s real -
+            or if it can be turned into something real.
           </span>
         </div>
 

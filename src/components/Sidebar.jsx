@@ -48,7 +48,7 @@ function Sidebar() {
           <div key={edu.school + edu.dates} className={styles.eduEntry}>
             <div className={styles.eduSchool}>{edu.school}</div>
             <div className={styles.eduDegree}>{edu.degree}</div>
-            <div className={styles.eduDates}>{edu.dates}</div>
+            <div className={styles.eduDates}></div>
             {edu.honor && <div className={styles.eduHonor}>◆ {edu.honor}</div>}
           </div>
         ))}
@@ -58,12 +58,11 @@ function Sidebar() {
         <div className={styles.sectionLabel}>Targeting</div>
         <div className={styles.targetingText}>
           <p>
-            Defense tech roles in{" "}
-            <strong>Solutions/Mission Operations Engineering</strong> and{" "}
-            <strong>Product Management</strong>.
+            Defense tech roles in <strong>Product Management</strong> and{" "}
+            <strong>Solutions/Mission Operations Engineering</strong>.
           </p>
           <p className={styles.targetingMeta}>
-            ETS: January 2027 · Based: Southern Pines, NC
+            Availible: June 2027 · Open to relocation
           </p>
         </div>
       </div>

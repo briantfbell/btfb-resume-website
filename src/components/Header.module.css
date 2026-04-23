@@ -24,7 +24,7 @@
 }
 .name {
   font-family: var(--font-display);
-  font-size: clamp(34px, 6vw, 45px);
+  font-size: clamp(34px, 6vw, 62.5px);
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.02em;
@@ -39,7 +39,11 @@
   font-style: italic;
   font-size: 16.5px;
   color: var(--text-muted);
-  margin-bottom: 28px;
+  margin: 10px 0 15px 0;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 74%;
 }
 .subtitleBreak {
   display: inline;
@@ -48,8 +52,10 @@
 .badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 28px;
+  gap: 28px;
+  margin-bottom: 20px;
+  max-width: 1000px;
+  width: 74%;
 }
 .badge {
   display: inline-flex;
@@ -64,27 +70,34 @@
   font-weight: 500;
 }
 .badgeClearance {
-  background: rgba(192, 96, 74, 0.15);
-  border: 1px solid rgba(192, 96, 74, 0.4);
-  color: #d4806a;
+  background: rgba(139, 0, 0, 0.15);
+  border: 1px solid rgba(139, 0, 0, 0.4);
+  color: #c97070;
+}
+.badgeUIUC {
+  background: rgba(11, 98, 228, 0.295);
+  border: 1px solid rgba(255, 112, 29, 0.568);
+  color: rgba(255, 255, 255, 0.644);
 }
 .badgeSpanish {
-  background: rgba(139, 168, 158, 0.12);
-  border: 1px solid rgba(139, 168, 158, 0.3);
-  color: var(--accent2);
+  background: rgba(180, 130, 30, 0.15);
+  border: 1px solid rgba(180, 130, 30, 0.4);
+  color: #c9a84c;
 }
-.badgeFrench {
-  background: rgba(200, 184, 122, 0.1);
-  border: 1px solid rgba(200, 184, 122, 0.35);
-  color: var(--accent);
+.badgeSOFVet {
+  background: rgba(52, 84, 52, 0.3);
+  border: 1px solid rgba(52, 84, 52, 0.6);
+  color: #7aab7a;
 }
 .contact {
   display: flex;
-  gap: 24px;
+  gap: 46px;
   flex-wrap: wrap;
   margin-top: 16px;
   font-size: 15px;
   color: var(--text-muted);
+  max-width: 1000px;
+  width: 74%;
 }
 
 .contactItem {
@@ -120,21 +133,24 @@
 
 .tabs {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin-top: 20px;
+  width: 100%;
 }
 
 .tabsLeft {
   display: flex;
   gap: 12px;
+  max-width: 1000px;
+  width: 74%;
 }
 
 .tab {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 110px;
+  flex: 1;
   padding: 10px 16px;
   border: 1px solid var(--border);
   background: var(--bg2);
@@ -144,6 +160,7 @@
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  white-space: nowrap;
   transition:
     border-color 0.2s ease,
     color 0.2s ease,
@@ -159,7 +176,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-width: 110px;
+  flex: 1;
   padding: 10px 16px;
   border: 1px solid var(--accent);
   background: rgba(255, 255, 255, 0.04);
@@ -169,13 +186,14 @@
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .tabDownload {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 16px;
+  padding: 10px 24px;
   border: 1px solid var(--border);
   background: var(--bg2);
   color: var(--text-muted);
@@ -184,6 +202,7 @@
   font-size: 11px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  white-space: nowrap;
   transition:
     border-color 0.2s ease,
     color 0.2s ease,
@@ -213,16 +232,16 @@
     white-space: normal;
     word-break: break-word;
     width: 100%;
-  }
-
-  .subtitleBreak {
-    display: block;
+    max-width: unset;
+    display: none;
   }
 
   .badges {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
+    max-width: unset;
+    gap: 8px;
   }
 
   .badge {
@@ -232,14 +251,14 @@
 
   .contact {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 8px;
     font-size: 12px;
     width: 100%;
+    max-width: unset;
   }
 
   .contactItem {
-    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -256,6 +275,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 6px;
     width: 100%;
+    max-width: unset;
   }
 
   .tab,

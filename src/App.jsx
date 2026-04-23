@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Home.jsx";
 import PortfolioLayout from "./pages/PortfolioLayout.jsx";
 import Resume from "./pages/resume/Resume.jsx";
-import ProjectsPage from "./pages/resume/Projects.jsx";
+import ProjectsPage from "./pages/resume/ProjectsPage.jsx";
 import Summary from "./pages/resume/Summary.jsx";
 import CreativeLayout from "./pages/creative/CreativeLayout.jsx";
 import CreativeLanding from "./pages/creative/CreativeLanding.jsx";

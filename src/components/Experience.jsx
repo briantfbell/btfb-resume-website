@@ -1,5 +1,3 @@
-//Experience.jsx
-
 import { experience } from "../data/resume";
 import styles from "./Experience.module.css";
 

@@ -313,7 +313,12 @@
   color: #8b6914;
 }
 
-/* ── THE ROADMAP ── */
+.askEmbedColumn {
+  max-width: 380px;
+  width: 100%;
+  margin-left: 82px;
+}
+
 .roadmapSection {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -335,16 +340,224 @@
   font-family: "Lora", serif;
 }
 
-.roadmapEmbed {
-  max-width: 380px;
-  width: 100%;
-  margin: 0 auto;
+/* ── PLAN ── */
+.planPhase {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 48px 0;
 }
 
-.askEmbedColumn {
-  max-width: 380px;
-  width: 100%;
-  margin-left: 82px;
+.planPhaseHeader {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+}
+
+.planPhaseNumber {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(48px, 8vw, 80px);
+  font-weight: 900;
+  color: #d4cfc4;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.planPhaseLabel {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #8b6914;
+}
+
+.planPhaseTimeline {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: #9a9080;
+  margin-left: auto;
+}
+
+.planPhaseBody {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 1000px;
+}
+
+.planPhaseHeading {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(24px, 3vw, 36px);
+  font-weight: 700;
+  color: #1a1814;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.planPhaseCopy {
+  font-family: "Lora", serif;
+  font-size: 16px;
+  line-height: 1.85;
+  color: #4a4438;
+  margin: 0;
+}
+
+.planMilestones {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 1000px;
+}
+
+.planMilestone {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  border-top: 1px solid #d4cfc4;
+  padding: 20px 0;
+}
+
+.planMilestone:last-child {
+  border-bottom: 1px solid #d4cfc4;
+}
+
+.planMilestoneTag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8b6914;
+  padding-top: 3px;
+  flex-shrink: 0;
+  width: 28px;
+}
+
+.planMilestoneContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.planMilestoneTitle {
+  font-family: "Playfair Display", serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1814;
+}
+
+.planMilestoneDetail {
+  font-family: "Lora", serif;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #6a6050;
+  font-style: italic;
+}
+
+.planCallout {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  border-left: 2px solid #8b6914;
+  padding-left: 20px;
+  border-radius: 0;
+  max-width: 1000px;
+}
+
+.planCalloutArrow {
+  font-size: 16px;
+  color: #8b6914;
+  flex-shrink: 0;
+  padding-top: 2px;
+}
+
+.planCalloutText {
+  font-family: "Lora", serif;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #4a4438;
+  margin: 0;
+  font-style: italic;
+}
+
+/* ── PLAN NAV ── */
+.planNav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d4cfc4;
+  position: sticky;
+  top: 0;
+  background: #f4f1eb;
+  z-index: 10;
+  padding-top: 16px;
+}
+
+.planNavBtn {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #9a9080;
+  background: none;
+  border: 1px solid #d4cfc4;
+  padding: 8px 16px;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.planNavBtn:hover {
+  color: #1a1814;
+  border-color: #1a1814;
+}
+
+.planNavBtnActive {
+  color: #8b6914;
+  border-color: #8b6914;
+}
+
+/* ── PLAN METRICS ── */
+.planMetrics {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 1000px;
+}
+
+.planMetricCard {
+  background: #ede9e1;
+  border-radius: 4px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.planMetricValue {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #1a1814;
+  line-height: 1;
+}
+
+.planMetricLabel {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #9a9080;
+}
+
+/* ── PLAN PHASE HEADER ── */
+.planPhaseHeaderMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
 }
 
 /* ── FOOTER ── */
@@ -371,7 +584,7 @@
   font-size: 15px;
   line-height: 1.7;
   color: #4a4438;
-  max-width: 1200px;
+  max-width: 800px;
 }
 
 .footerNum {

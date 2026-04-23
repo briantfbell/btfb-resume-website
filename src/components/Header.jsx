@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Mail, Phone, Briefcase, MapPin } from "lucide-react";
+import { Mail, Phone, Briefcase, MapPin, Globe } from "lucide-react";
 import styles from "./Header.module.css";
 
 function Header() {
@@ -10,22 +10,29 @@ function Header() {
         Brian Thomas Fernandez <span>Bell</span>
       </h1>
       <div className={styles.subtitle}>
-        U.S. Army 37A | Psychological Operations Officer
-        <span className={styles.subtitleBreak}>
-          {" "}
-          Software Developer · Transitioning in 2027
-        </span>
+        <span>U.S. Army 37A - Psychological Operations Officer</span>
+        <span>|</span>
+        <span>Systems Engineer </span>
+        <span>|</span>
+        <span>Strategic Communicator</span>
+        <span>|</span>
+        <span>Builder & Creative</span>
+        <span>|</span>
+        <span>Solutions Architect</span>
       </div>
 
       <div className={styles.badges}>
         <span className={`${styles.badge} ${styles.badgeClearance}`}>
-          &#9632; Active TS/SCI Clearance
+          &#9670; Active TS/SCI Clearance
+        </span>
+        <span className={`${styles.badge} ${styles.badgeUIUC}`}>
+          &#9670; University of Illinois
         </span>
         <span className={`${styles.badge} ${styles.badgeSpanish}`}>
-          &#9670; Spanish - Fluent (DLPT 3/3; OPI 3)
+          &#9670; Spanish - Professionally Fluent
         </span>
-        <span className={`${styles.badge} ${styles.badgeFrench}`}>
-          &#9670; French - Refuse to Speak
+        <span className={`${styles.badge} ${styles.badgeSOFVet}`}>
+          &#9670; Special Operations Veteran
         </span>
       </div>
 
@@ -39,10 +46,6 @@ function Header() {
           <span>(618) 310-6721</span>
         </div>
         <div className={styles.contactItem}>
-          <MapPin size={14} />
-          <span>Southern Pines, NC</span>
-        </div>
-        <div className={styles.contactItem}>
           <Briefcase size={14} />
           <a
             href="https://linkedin.com/in/briantfbell"
@@ -51,6 +54,14 @@ function Header() {
           >
             linkedin.com/in/briantfbell
           </a>
+        </div>
+        <div className={styles.contactItem}>
+          <MapPin size={14} />
+          <span>Southern Pines, NC</span>
+        </div>
+        <div className={styles.contactItem}>
+          <Globe size={14} />
+          <span>Open to Relocation</span>
         </div>
       </div>
 
@@ -62,7 +73,7 @@ function Header() {
               isActive ? styles.tabActive : styles.tab
             }
           >
-            Professional Summary
+            Proffesional Summary
           </NavLink>
           <NavLink
             to="/resume"
@@ -78,7 +89,7 @@ function Header() {
               isActive ? styles.tabActive : styles.tab
             }
           >
-            Projects
+            Project Portfolio
           </NavLink>
         </div>
         <a

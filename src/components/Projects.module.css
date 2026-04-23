@@ -19,6 +19,32 @@
   height: 1px;
   background: var(--border);
 }
+
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.projectName {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f5f5f5;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
 .card {
   padding: 20px;
   background: var(--bg2);
@@ -29,11 +55,7 @@
     border-color 0.2s,
     background 0.2s;
   position: relative;
-  overflow: hidden;
-}
-.card:hover {
-  border-color: var(--border-accent);
-  background: var(--bg3);
+  overflow: visible;
 }
 .card::before {
   content: "";
@@ -45,9 +67,16 @@
   background: linear-gradient(90deg, var(--accent), transparent);
   opacity: 0;
   transition: opacity 0.2s;
+  border-radius: 2px 2px 0 0;
 }
+
 .card:hover::before {
   opacity: 1;
+}
+
+.card:hover {
+  border-color: var(--border-accent);
+  background: var(--bg3);
 }
 .cardName {
   font-size: 13px;
@@ -112,6 +141,48 @@
   filter: brightness(1.05);
 }
 
+.chip {
+  font-size: 12px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border: 1px solid;
+  border-radius: 10px;
+  background: var(--bg3);
+  color: var(--text-muted);
+}
+
+.chips {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.chipPM {
+  border-color: rgba(247, 223, 30, 0.4);
+  color: #f7df1e;
+}
+
+.chipSolo {
+  background: rgba(136, 126, 86, 0.199);
+  border: 1px solid rgba(136, 126, 86, 0.822);
+  color: var(--accent);
+}
+
+.chipCollab {
+  background: rgba(74, 71, 255, 0.062);
+  border: 1px solid rgba(59, 107, 211, 0.199);
+  color: #00d9ffbe;
+}
+
+.chipDefault {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border-accent);
+  color: var(--text-muted);
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -129,7 +200,7 @@
   color: var(--text-muted);
 }
 
-/* Make sure to edit const getTagClass in Projects.jsx if adding */
+/* Make sure to edit const getTagClass in ProjectsPage.jsx if adding */
 /* Frontend */
 .tagReact {
   border-color: rgba(97, 218, 251, 0.4);
@@ -163,6 +234,10 @@
 }
 
 /* Other */
+.tagVibes {
+  border-color: rgba(255, 187, 255, 0.733);
+  color: rgba(255, 187, 255, 0.733);
+}
 .tagUIUX {
   border-color: rgba(255, 0, 0, 0.4);
   color: #ff0000;
@@ -220,31 +295,78 @@
   }
 }
 
-@media (max-width: 768px) {
-  .cardName {
-    font-size: 12px;
-  }
-  .cardDesc {
-    font-size: 11px;
-  }
-  .cardContent {
-    grid-template-columns: 1fr;
-  }
-
-  .preview {
-    align-items: flex-start;
-  }
-
-  .preview img {
-    max-width: 100%;
+@media (max-width: 480px) {
+  .section {
+    width: 100%;
+    overflow: hidden;
   }
 
   .projectName {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    word-break: break-word;
+    white-space: normal;
+    overflow-wrap: break-word;
   }
 
-  .tags {
-    flex-wrap: wrap;
+  .projectsGrid {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .card {
+    width: 90%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .cardContent {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .text {
+    order: 1;
+  }
+
+  .preview {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4px;
+  }
+
+  .preview img {
+    width: 100%;
+    max-width: 200px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .cardHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .chips {
+    justify-content: flex-start;
+  }
+
+  .projectName {
+    font-size: 1rem;
+    word-break: break-word;
+  }
+
+  .projectDesc {
+    font-size: 12px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .tag {
