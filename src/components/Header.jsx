@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { Mail, Phone, Briefcase, MapPin, Globe } from "lucide-react";
+import { Mail, Phone, Briefcase, MapPin, Globe, FileDown } from "lucide-react";
 import styles from "./Header.module.css";
 
 function Header() {
@@ -14,7 +14,7 @@ function Header() {
         <span>|</span>
         <span>Systems & Solutions Engineer </span>
         <span>|</span>
-        <span>Strategic Communicator</span>
+        <span>Storyteller</span>
         <span>|</span>
         <span>Builder & Creative</span>
       </div>
@@ -71,7 +71,7 @@ function Header() {
               isActive ? styles.tabActive : styles.tab
             }
           >
-            Proffesional Summary
+            Summary & Approach
           </NavLink>
           <NavLink
             to="/resume"
@@ -90,13 +90,16 @@ function Header() {
             Project Portfolio
           </NavLink>
         </div>
-        <a
-          href="/Bell_Resume_CAO_v3.20.01Q.pdf"
-          download
-          className={styles.tabDownload}
-        >
-          &#8595; Resume .PDF
-        </a>
+        <div>
+          <a
+            href="/Bell_Resume_CAO_v3.20.01Q.pdf"
+            download
+            className={styles.tabDownload}
+          >
+            <FileDown size={15} style={{ marginRight: "8px" }} />
+            <span>Resume.PDF</span>
+          </a>
+        </div>
       </div>
     </header>
   );

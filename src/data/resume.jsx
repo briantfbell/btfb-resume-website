@@ -1,9 +1,3 @@
-//resume.js
-
-export const summary = `U.S. Army Special Operations officer transitioning into defense tech. Eight years leading teams in high-stakes environments across South America and Korea - now building the technical fluency to match. I translate ambiguous operational problems into clear requirements, working the space between end users and engineering.
-
-Targeting Mission Operations, Product Management, and Solutions Engineering roles at defense-tech companies. Active TS/SCI. Fluent in Spanish. Available January 2027.`;
-
 export const experience = [
   {
     dates: "Jan 2026 - Dec 2026",

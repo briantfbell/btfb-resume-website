@@ -67,7 +67,7 @@ export const projects = [
     chips: ["Solo Project"],
     description:
       "Browser-based recreation of Tarkov's gym training mechanic with custom animation logic and timing-based input. Simulates in-game skill progression through interactive UI and dynamic hit detection.",
-    tags: ["Game Mechanics", "React", "JavaScript", "UI/UX", "Vibe-Coded"],
+    tags: ["Game Mechanics", "React", "JavaScript", "UI/UX"],
     status: "In progress",
     link: "https://github.com/briantfbell/tarkov-gym-practice",
     images: ["/project-images/tarkov_gym_trainer_PROJECT_image.png"],
