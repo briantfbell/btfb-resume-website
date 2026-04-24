@@ -106,11 +106,11 @@ function Summary() {
 
         <aside className={styles.sidebar}>
           <div className={styles.headshotWrapper}>
-            <img
+            {/* <img
               src="/summary_photos/LinkedIn_Photo_v2.png"
               alt="Brian Bell"
               className={styles.headshot}
-            />
+            /> */}
             <img
               src="/summary_photos/summary_photo_lima_1.png"
               alt="Brian Bell"
