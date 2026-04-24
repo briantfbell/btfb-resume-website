@@ -1,9 +1,10 @@
-/* Header.module.css */
+/* THIS IS A TEST LOOK AT ME CAN YOU FIND ME?! */
 
 .header {
   margin-bottom: 30px;
   animation: fadeUp 0.7s ease both;
 }
+
 .eyebrow {
   font-family: var(--font-mono);
   font-size: 11px;
@@ -15,6 +16,7 @@
   align-items: center;
   gap: 12px;
 }
+
 .eyebrow::before {
   content: "";
   display: inline-block;
@@ -22,18 +24,21 @@
   height: 1px;
   background: var(--accent);
 }
+
 .name {
   font-family: var(--font-display);
-  font-size: clamp(34px, 6vw, 62.5px);
+  font-size: clamp(34px, 6vw, 67px);
   font-weight: 800;
   line-height: 1;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
   color: var(--text);
   margin-bottom: 6px;
 }
+
 .name span {
   color: var(--accent);
 }
+
 .subtitle {
   font-family: var(--font-serif);
   font-style: italic;
@@ -41,10 +46,10 @@
   color: var(--text-muted);
   margin: 10px 0 15px 0;
   display: flex;
-  justify-content: space-between;
-  max-width: 1000px;
-  width: 74%;
+  gap: 38px;
+  width: 100%;
 }
+
 .subtitleBreak {
   display: inline;
 }
@@ -52,11 +57,11 @@
 .badges {
   display: flex;
   flex-wrap: wrap;
-  gap: 28px;
+  gap: 14px;
   margin-bottom: 20px;
-  max-width: 1000px;
-  width: 74%;
+  width: 100%
 }
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -69,26 +74,31 @@
   text-transform: uppercase;
   font-weight: 500;
 }
+
 .badgeClearance {
   background: rgba(139, 0, 0, 0.15);
   border: 1px solid rgba(139, 0, 0, 0.4);
   color: #c97070;
 }
+
 .badgeUIUC {
   background: rgba(11, 98, 228, 0.295);
   border: 1px solid rgba(255, 112, 29, 0.568);
   color: rgba(255, 255, 255, 0.644);
 }
+
 .badgeSpanish {
   background: rgba(180, 130, 30, 0.15);
   border: 1px solid rgba(180, 130, 30, 0.4);
   color: #c9a84c;
 }
+
 .badgeSOFVet {
   background: rgba(52, 84, 52, 0.3);
   border: 1px solid rgba(52, 84, 52, 0.6);
   color: #7aab7a;
 }
+
 .contact {
   display: flex;
   gap: 46px;
@@ -96,8 +106,7 @@
   margin-top: 16px;
   font-size: 15px;
   color: var(--text-muted);
-  max-width: 1000px;
-  width: 74%;
+  width: 100%
 }
 
 .contactItem {
@@ -120,6 +129,7 @@
 .contactItem a:hover {
   color: var(--text);
 }
+
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -137,13 +147,13 @@
   justify-content: space-between;
   margin-top: 20px;
   width: 100%;
+  gap: 12px;
 }
 
 .tabsLeft {
   display: flex;
   gap: 12px;
-  max-width: 1000px;
-  width: 74%;
+  flex: 1;
 }
 
 .tab {
@@ -161,10 +171,7 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   white-space: nowrap;
-  transition:
-    border-color 0.2s ease,
-    color 0.2s ease,
-    background 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
 }
 
 .tab:hover {
@@ -203,15 +210,148 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   white-space: nowrap;
-  transition:
-    border-color 0.2s ease,
-    color 0.2s ease,
-    background 0.2s ease;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
 }
 
 .tabDownload:hover {
   border-color: var(--accent);
   color: var(--accent);
+}
+
+@media (max-width: 1100px) {
+  .subtitle {
+    width: 85%;
+    max-width: unset;
+    font-size: 14px;
+  }
+
+  .badges {
+    width: 85%;
+    max-width: unset;
+    gap: 12px;
+  }
+
+  .contact {
+    width: 85%;
+    max-width: unset;
+    gap: 20px;
+  }
+
+  .tabsLeft {
+    width: 85%;
+    max-width: unset;
+  }
+}
+
+@media (max-width: 1024px) {
+  .subtitle {
+    width: 95%;
+    max-width: unset;
+    font-size: 13px;
+  }
+
+  .badges {
+    width: 95%;
+    max-width: unset;
+    gap: 8px;
+  }
+
+  .contact {
+    width: 95%;
+    max-width: unset;
+    gap: 14px;
+    font-size: 13px;
+  }
+
+  .tabsLeft {
+    width: 95%;
+    max-width: unset;
+  }
+}
+
+@media (max-width: 768px) {
+  .subtitle {
+    width: 100%;
+    max-width: unset;
+    font-size: 12px;
+    display: none;
+  }
+
+  .badges {
+    width: 100%;
+    max-width: unset;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .contact {
+    width: 100%;
+    max-width: unset;
+    gap: 12px;
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+  .tabsLeft {
+    width: 100%;
+    max-width: unset;
+    gap: 8px;
+  }
+
+  .tab,
+  .tabActive {
+    font-size: 10px;
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .subtitle {
+    display: none;
+  }
+
+  .badges {
+    width: 100%;
+    max-width: unset;
+    gap: 8px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 4px 8px;
+    flex: 1;
+    justify-content: center;
+    min-width: fit-content;
+  }
+
+  .contact {
+    width: 100%;
+    max-width: unset;
+    gap: 10px;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tabsLeft {
+    width: 100%;
+    max-width: unset;
+    gap: 6px;
+  }
+
+  .tab,
+  .tabActive {
+    font-size: 10px;
+    padding: 8px 6px;
+    flex: 1;
+  }
 }
 
 @media (max-width: 480px) {
@@ -228,11 +368,6 @@
   }
 
   .subtitle {
-    font-size: 12px;
-    white-space: normal;
-    word-break: break-word;
-    width: 100%;
-    max-width: unset;
     display: none;
   }
 
@@ -294,3 +429,4 @@
     padding: 8px;
   }
 }
+
