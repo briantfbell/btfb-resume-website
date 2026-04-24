@@ -12,13 +12,11 @@ function Header() {
       <div className={styles.subtitle}>
         <span>U.S. Army 37A - Psychological Operations Officer</span>
         <span>|</span>
-        <span>Systems Engineer </span>
+        <span>Systems & Solutions Engineer </span>
         <span>|</span>
         <span>Strategic Communicator</span>
         <span>|</span>
         <span>Builder & Creative</span>
-        <span>|</span>
-        <span>Solutions Architect</span>
       </div>
 
       <div className={styles.badges}>
