@@ -14,7 +14,7 @@ export const projects = [
     ],
     status: "Completed Apr 2026 — Galvanize Capstone Project",
     link: "https://github.com/briantfbell/torch-app-capstone",
-    images: ["/project-images/torch_project_img_2.png"],
+    video: "https://www.youtube.com/embed/4wu_Znmez-Q?rel=0&modestbranding=1",
   },
   {
     name: "This Website - briantfbell.io - Portfolio & Resume",

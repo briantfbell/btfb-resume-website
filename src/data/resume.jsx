@@ -1,9 +1,9 @@
 export const experience = [
   {
     dates: "Jan 2026 - Dec 2026",
-    org: "USASOC AI Division | Force Modernization Center",
+    org: "USASOC AI Division | Office of ARSOF Autonomy | Force Modernization Center",
     projected: false,
-    role: "Software Development Fellow",
+    role: "Product Manager",
     bullets: [
       "Designed and prototyped software tools supporting AI/ML integration for operational planning and decision support across active SOF missions",
       "Translated end-user requirements into development tasks across multiple Agile sprint cycles; coordinated directly with engineers to field-test and iterate applications",

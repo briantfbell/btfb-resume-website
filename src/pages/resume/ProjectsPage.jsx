@@ -96,7 +96,16 @@ function Projects() {
                 )}
               </div>
 
-              {project.images && (
+              {project.video ? (
+                <div className={styles.preview}>
+                  <iframe
+                    src={project.video}
+                    title={`${project.name} preview`}
+                    allowFullScreen
+                    className={styles.projectVideo}
+                  />
+                </div>
+              ) : project.images ? (
                 <div className={styles.preview}>
                   {project.images.map((img, i) => (
                     <img
@@ -106,7 +115,7 @@ function Projects() {
                     />
                   ))}
                 </div>
-              )}
+              ) : null}
             </div>
           </div>
         ))}

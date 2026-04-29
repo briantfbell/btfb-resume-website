@@ -76,26 +76,26 @@
 
 .badgeClearance {
   background: rgba(139, 0, 0, 0.15);
-  border: 1px solid rgba(139, 0, 0, 0.4);
-  color: #c97070;
+  border: 2px solid rgba(139, 0, 0, 0.4);
+  color: #c78686;
 }
 
 .badgeUIUC {
   background: rgba(11, 98, 228, 0.295);
-  border: 1px solid rgba(255, 112, 29, 0.568);
-  color: rgba(255, 255, 255, 0.644);
+  border: 2px solid rgba(255, 112, 29, 0.568);
+  color: rgba(182, 246, 255, 0.795);
 }
 
 .badgeSpanish {
   background: rgba(180, 130, 30, 0.15);
-  border: 1px solid rgba(180, 130, 30, 0.4);
-  color: #c9a84c;
+  border: 2px solid rgba(180, 130, 30, 0.4);
+  color: #d8c07f;
 }
 
 .badgeSOFVet {
   background: rgba(52, 84, 52, 0.3);
-  border: 1px solid rgba(52, 84, 52, 0.6);
-  color: #7aab7a;
+  border: 2px solid rgba(52, 84, 52, 0.6);
+  color: #a4dba4;
 }
 
 .contact {
