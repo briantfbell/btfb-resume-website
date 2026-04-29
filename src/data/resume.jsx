@@ -3,11 +3,11 @@ export const experience = [
     dates: "Jan 2026 - Dec 2026",
     org: "USASOC AI Division | Office of ARSOF Autonomy | Force Modernization Center",
     projected: false,
-    role: "Product Manager",
+    role: "Technical Program Manager",
     bullets: [
-      "Designed and prototyped software tools supporting AI/ML integration for operational planning and decision support across active SOF missions",
-      "Translated end-user requirements into development tasks across multiple Agile sprint cycles; coordinated directly with engineers to field-test and iterate applications",
-      "Completed full-stack training in JavaScript, React, REST APIs, SQL, and Git; built [X] applications as part of Galvanize Software Engineering Immersive Program",
+      "Served as Platform OIC for a multi-tenant AI dashboard platform functioning as the integration layer for cross-functional AI tool teams across the division",
+      "Coordinated with embedded PMs for each hosted AI capability to align priorities, resolve dependencies, and ensure platform-level delivery timelines",
+      "Reported directly to Platform Director; bridged technical execution and organizational stakeholder requirements across multiple concurrent AI initiatives",
     ],
   },
   {

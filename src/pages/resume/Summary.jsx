@@ -9,22 +9,15 @@ function Summary() {
           <div className={styles.sectionLabel}>Professional Summary</div>
           <div className={styles.content}>
             <p className={styles.paragraph}>
-              Former U.S. Army officer with eight years of service, including
-              four years in Special Operations. Background spans logistics
-              operations, strategic communication - with experience coordinating
-              across joint, interagency, and partner-nation environments. Spent
-              the last year embedded with a defense-focused AI & autonomous
-              systems division building decision-support tools. Focused on
-              translating complex systems into solutions that actually work for
-              the people using them.
+              Former U.S. Army officer with eight years of service, including four in Special Operations. Background in logistics, strategic communication, and influencing decision-making across complex, multi-stakeholder environments. Most recently worked within a defense AI and autonomy division, leading platform-level integration efforts for a multi-team AI ecosystem. Focused on translating complex systems and behavioral insights into products that drive user adoption, engagement, and sustained use.
             </p>
           </div>
           {/* NARRATIVE */}
           <div className={styles.sectionLabel}>My Approach</div>
           <div className={styles.content}>
             <p className={styles.paragraph}>
-              Hi, I'm Brian. I spent eight years as a U.S. Army officer. The
-              last four were in Special Operations. But before that title meant
+              Hi, I'm Brian. I spent nine years in the Army; the last
+              five of those as a Special Operations Officer. But before that title meant
               anything, I was doing what Army officers do: managing things I
               didn't fully understand yet, coordinating people who knew more
               than me, and figuring out how to make the whole system work
@@ -37,6 +30,7 @@ function Summary() {
               everything to ask the right questions, translate between
               specialists, and build a plan that accounts for all of it.
             </p>
+            <p className={styles.paragraph}>That experience shaped a simple framework I carry into everything I build: understand what people believe, understand why it works for them, and design something better that they will choose instead.</p>
           </div>
 
           <div className={styles.pullQuote}>
@@ -61,11 +55,7 @@ function Summary() {
               them where they are, and build something credible enough that they
               take the next step on their own.
             </p>
-            <p className={styles.paragraph}>
-              We ran that process across four countries. Different languages,
-              different cultures, different threat environments. The tactics
-              changed. The framework didn't.
-            </p>
+
           </div>
 
           <div className={styles.pullQuote}>
@@ -95,12 +85,17 @@ function Summary() {
               learned to build - because I got tired of having ideas I couldn't
               execute myself.
             </p>
+            <p className={styles.paragraph}>That shift is what drives how I approach every problem today.</p>
           </div>
         </div>
 
         <aside className={styles.sidebar}>
           <div className={styles.headshotWrapper}>
             <img
+                src="/summary_photos/LinkedIn_Photo_v2.png"
+                alt="Brian Bell"
+                className={styles.headshot}
+            /><img
               src="/summary_photos/summary_photo_lima_1.png"
               alt="Brian Bell"
               className={styles.headshot}
