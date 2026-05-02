@@ -11,14 +11,14 @@ function Home() {
         Fernandez <span>Bell</span>
       </h1>
       <p className={styles.tagline}>
-        Officer. Developer. Analyst of things that don't need analyzing.
+        Communicator who learned to build. Builder who never stopped communicating.
       </p>
       <div className={styles.links}>
         <Link to="/resume" className={styles.link}>
-          Resume &#8594;
+          Professional Profile &#8594;
         </Link>
         <Link to="/creative" className={styles.link}>
-          Creative &#8594;
+          Creative Endeavors &#8594;
         </Link>
       </div>
     </div>

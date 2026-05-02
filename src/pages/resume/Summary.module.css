@@ -145,17 +145,37 @@
   }
 }
 
+/* Mobile photo strip - hidden on desktop */
+.mobilePhotos {
+  display: none;
+}
+
 @media (max-width: 768px) {
-  .hero {
+  .grid {
     grid-template-columns: 1fr;
   }
 
-  .headshotWrapper {
-    justify-content: flex-start;
+  .sidebar {
+    display: none;
   }
 
-  .headshot {
-    max-width: 160px;
+  .mobilePhotos {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+    width: 100%;
+  }
+
+  .mobilePhoto {
+    flex: 1;
+    width: 0;
+    min-width: 0;
+    aspect-ratio: 2/3;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 2px;
+    border: 2px solid var(--border);
+    filter: grayscale(10%);
   }
 
   .pullQuote {
