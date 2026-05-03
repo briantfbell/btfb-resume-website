@@ -145,7 +145,7 @@
   }
 }
 
-/* Mobile photo strip - hidden on desktop */
+/* Mobile photo strip - shown as a row on the top - hidden on desktop */
 .mobilePhotos {
   display: none;
 }

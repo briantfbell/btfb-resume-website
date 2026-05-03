@@ -5,17 +5,18 @@ function Summary() {
     <div className={styles.container}>
 
       {/* Mobile photo strip - hidden on desktop */}
+      {/* Reminder: This only changes mobile view, for consistency change photos down below too */}
       <div className={styles.mobilePhotos}>
-        <img src="/summary_photos/LinkedIn_Photo_v2.png" alt="Brian Bell" className={styles.mobilePhoto} />
-        <img src="/summary_photos/summary_photo_lima_1.png" alt="Brian Bell" className={styles.mobilePhoto} />
-        <img src="/summary_photos/summary_photo_range.png" alt="Brian Bell" className={styles.mobilePhoto} />
-        <img src="/summary_photos/summary_photo_puppets.png" alt="Brian Bell" className={styles.mobilePhoto} />
+        <img src="/summary_photos/headshot_v2.png" alt="casual_headshot" className={styles.mobilePhoto} />
+        <img src="/summary_photos/summary_photo_lima_1.png" alt="PER_Conference" className={styles.mobilePhoto} />
+        <img src="/summary_photos/summary_photo_range.png" alt="COL_Range" className={styles.mobilePhoto} />
+        <img src="/summary_photos/summary_photo_puppets.png" alt="ECU_Meeting" className={styles.mobilePhoto} />
       </div>
 
       <div className={styles.grid}>
         <div className={styles.main}>
 
-          {/* SIGNAL - quick credibility */}
+          {/* Formal Professional Summary */}
           <div className={styles.sectionLabel}>Professional Summary</div>
           <div className={styles.content}>
             <p className={styles.paragraph}>
@@ -30,7 +31,6 @@ function Summary() {
             </p>
           </div>
 
-          {/* NARRATIVE */}
           <div className={styles.sectionLabel}>My Approach</div>
           <div className={styles.content}>
             <p className={styles.paragraph}>
@@ -56,15 +56,40 @@ function Summary() {
             </p>
           </div>
 
-          <div className={styles.pullQuote}>
+          {/* Version A: Direct */}
+          {/* <div className={styles.pullQuote}>
             I have spent the last four years getting paid to change what people
             believe.
           </div>
 
           <div className={styles.content}>
             <p className={styles.paragraph}>
-              That's the honest version of "Psychological Operations." Most
-              people hear that title and picture propaganda posters or
+              That's the honest version of what a "Psychological Operations Officer" does.
+              Most people hear that title and picture propaganda posters or
+              loudspeakers mounted to helicopters. The reality is more
+              interesting and less cinematic. It's research, targeting, message
+              development, product design, channel selection, and capturing
+              data. It's applied behavioral science with a mission attached.
+            </p>
+            <p className={styles.paragraph}>
+              The core problem is always the same: you have an audience, they
+              currently believe or do something that is working against your
+              objective, and you need to move them. You can't force it. You
+              can't fake it. You have to understand them well enough to meet
+              them where they are, and build something credible enough that they
+              take the next step on their own.
+            </p>
+          </div> */}
+
+          {/* Version B: Softer */}
+          <div className={styles.pullQuote}>
+            All audiences have a door. The job is figuring out which key opens it.
+          </div>
+
+          <div className={styles.content}>
+            <p className={styles.paragraph}>
+              That's simplest description of how Psychological Operations work.
+              Most people immediately picture propaganda posters or
               loudspeakers mounted to helicopters. The reality is more
               interesting and less cinematic. It's research, targeting, message
               development, product design, channel selection, and capturing
@@ -113,7 +138,7 @@ function Summary() {
           </div>
 
         </div>
-
+{/* Remember to change mobile photos up top if you change these and want consistency */}
         <aside className={styles.sidebar}>
           <div className={styles.headshotWrapper}>
             <img
