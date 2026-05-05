@@ -3,19 +3,33 @@ import styles from "./Summary.module.css";
 function Summary() {
   return (
     <div className={styles.container}>
-
       {/* Mobile photo strip - hidden on desktop */}
       {/* Reminder: This only changes mobile view, for consistency change photos down below too */}
       <div className={styles.mobilePhotos}>
-        <img src="/summary_photos/headshot_v2.png" alt="casual_headshot" className={styles.mobilePhoto} />
-        <img src="/summary_photos/summary_photo_lima_1.png" alt="PER_Conference" className={styles.mobilePhoto} />
-        <img src="/summary_photos/summary_photo_range.png" alt="COL_Range" className={styles.mobilePhoto} />
-        <img src="/summary_photos/summary_photo_puppets.png" alt="ECU_Meeting" className={styles.mobilePhoto} />
+        <img
+          src="/summary_photos/headshot_v4.png"
+          alt="casual_headshot"
+          className={styles.mobilePhoto}
+        />
+        <img
+          src="/summary_photos/summary_photo_lima_1.png"
+          alt="PER_Conference"
+          className={styles.mobilePhoto}
+        />
+        <img
+          src="/summary_photos/summary_photo_range.png"
+          alt="COL_Range"
+          className={styles.mobilePhoto}
+        />
+        <img
+          src="/summary_photos/summary_photo_puppets.png"
+          alt="ECU_Meeting"
+          className={styles.mobilePhoto}
+        />
       </div>
 
       <div className={styles.grid}>
         <div className={styles.main}>
-
           {/* Formal Professional Summary */}
           <div className={styles.sectionLabel}>Professional Summary</div>
           <div className={styles.content}>
@@ -83,17 +97,18 @@ function Summary() {
 
           {/* Version B: Softer */}
           <div className={styles.pullQuote}>
-            All audiences have a door. The job is figuring out which key opens it.
+            All audiences have a door. The job is figuring out which key opens
+            it.
           </div>
 
           <div className={styles.content}>
             <p className={styles.paragraph}>
               That's simplest description of how Psychological Operations work.
-              Most people immediately picture propaganda posters or
-              loudspeakers mounted to helicopters. The reality is more
-              interesting and less cinematic. It's research, targeting, message
-              development, product design, channel selection, and capturing
-              data. It's applied behavioral science with a mission attached.
+              Most people immediately picture propaganda posters or loudspeakers
+              mounted to helicopters. The reality is more interesting and less
+              cinematic. It's research, targeting, message development, product
+              design, channel selection, and capturing data. It's applied
+              behavioral science with a mission attached.
             </p>
             <p className={styles.paragraph}>
               The core problem is always the same: you have an audience, they
@@ -136,13 +151,12 @@ function Summary() {
               That shift is what drives how I approach every problem today.
             </p>
           </div>
-
         </div>
-{/* Remember to change mobile photos up top if you change these and want consistency */}
+        {/* Remember to change mobile photos up top if you change these and want consistency */}
         <aside className={styles.sidebar}>
           <div className={styles.headshotWrapper}>
             <img
-              src="/summary_photos/headshot_v2.png"
+              src="/summary_photos/LinkedIn_Photo_v4.png"
               alt="Brian Bell"
               className={styles.headshot}
             />
