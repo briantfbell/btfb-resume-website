@@ -71,9 +71,7 @@ function Creative() {
       <div className={styles.hero}>
         <div className={styles.heroEyebrow}>brianTFbell</div>
         <h1 className={styles.heroHeading}>
-          I take things people interact with casually
-          <br />
-          and take them <em>embarrassingly seriously.</em>
+          I take things people interact with casually and take them <em>embarrassingly seriously.</em>
         </h1>
         <p className={styles.heroBio}>
           U.S. Army Special Operations officer. Software developer. YouTube

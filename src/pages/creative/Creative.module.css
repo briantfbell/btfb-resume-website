@@ -19,6 +19,7 @@
 
 .creativeNav {
   display: flex;
+  justify-content: space-between;
   gap: 16px;
   margin-top: 32px;
   flex-wrap: wrap;
@@ -81,12 +82,23 @@
   line-height: 1.1;
   letter-spacing: -0.01em;
   color: #1a1814;
-  margin-bottom: 32px;
+  margin-bottom: 18px;
 }
 
 .heroHeading em {
   font-style: italic;
   color: #8b6914;
+}
+
+.heroHeadingTwo {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(32px, 5vw, 25px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  font-style: italic;
+  color: #8b6914;
+  margin-bottom: 22px;
 }
 
 .heroBio {

@@ -8,15 +8,16 @@ function CreativeLayout() {
       <div className={styles.hero}>
         <div className={styles.heroEyebrow}>brianTFbell</div>
         <h1 className={styles.heroHeading}>
-          I take things people interact with casually
-          <br />
-          and take them <em>embarrassingly seriously.</em>
+          Serious analysis for unserious subjects.
+          <br/>
+        </h1>
+        <h1 className={styles.heroHeadingTwo}>
+          <em>Applying rigorous methodology to things that don't deserve it.</em>
         </h1>
         <p className={styles.heroBio}>
-          U.S. Army Special Operations officer. Software developer. YouTube
-          person. I make videos about pop culture, game theory, and whatever I
-          can't stop thinking about - then I quantify them until the joke
-          becomes a thesis.
+          I look at things people interact with casually and take them <em>embarrassingly seriously.</em> Pop culture, fast food economics, and
+          whatever cultural artifact I can't stop treating like a dissertation
+          subject - then I publish the findings anyway.
         </p>
         <nav className={styles.creativeNav}>
           <NavLink
