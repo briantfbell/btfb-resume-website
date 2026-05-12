@@ -183,6 +183,27 @@
   max-width: 640px;
 }
 
+.workItemsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: #d4cfc4;
+}
+
+.workItemsGrid .workItem {
+  background: #f4f1eb;
+  border: none;
+  padding: 32px;
+}
+
+.workItemsGrid .workItem:last-child {
+  border: none;
+}
+
+.workItemsGrid .workItemInner {
+  max-width: 100%;
+}
+
 .workTitle {
   font-family: "Playfair Display", serif;
   font-size: 17px;
