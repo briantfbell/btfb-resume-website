@@ -9,7 +9,7 @@ function CreativeLanding() {
           <p className={styles.paragraph}>
             Hi, I'm Brian - or brianTFbell as I go by online. I started making
             videos in 2019 because I was deployed to South Korea with too much
-            time on my hands. The Army kept me busy enough that posting was
+            time on my hands. Since then, the Army kept me busy enough that posting was
             never consistent, but the thinking never stopped. At some point I
             realized the gap between "guy with a YouTube channel" and "person
             who takes this seriously" wasn't talent or ideas - it was time.
@@ -57,8 +57,8 @@ function CreativeLanding() {
             <p className={styles.paragraph}>
               A well-constructed argument delivered as a story doesn't just
               inform - it changes how someone sees something they thought they
-              already understood. That's what I'm building toward. The subjects
-              are sometimes silly. The intention isn't.
+              already understood. That's what I'm building toward. <br/>The subjects
+              are sometimes silly, but that doesn't mean they can't also be interesting.
             </p>
           </div>
         </div>

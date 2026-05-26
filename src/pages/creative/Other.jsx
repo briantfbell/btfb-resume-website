@@ -2,25 +2,15 @@ import styles from "./Creative.module.css";
 
 const work = [
   {
-    category: "Brand & Design",
+    category: "Other Creative Things I've Done, either professionally or at least semi-professionally",
     items: [
-      {
-        title: "Delta Company Dawgs",
-        meta: "Off-Duty Designs storefront",
-        note: "Military unit merch built on hypebeast aesthetics — YungLA and DarkSport energy applied to Army culture. Dark palette, bold type, zero clipart.",
-        link: null,
-      },
+
       {
         title: "Off-Duty Designs",
         meta: "Founder · Military merch LLC",
         note: "Print-on-demand storefront serving military units. Custom storefronts built on request. Covers its own costs and then some.",
         link: null,
       },
-    ],
-  },
-  {
-    category: "Nonprofit",
-    items: [
       {
         title: "Life Skills for Soldiers",
         meta: "Marketing Director · 501(c)(3)",
@@ -29,6 +19,7 @@ const work = [
       },
     ],
   },
+
 ];
 
 function OtherStuff() {

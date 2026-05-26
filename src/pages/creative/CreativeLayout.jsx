@@ -8,19 +8,13 @@ function CreativeLayout() {
       <div className={styles.hero}>
         <div className={styles.heroEyebrow}>brianTFbell</div>
         <h1 className={styles.heroHeading}>
-          Serious analysis for unserious subjects.
-          <br />
-        </h1>
-        <h1 className={styles.heroHeadingTwo}>
-          <em>
-            Applying rigorous methodology to things that don't deserve it.
-          </em>
+          Cultural Anthropology: <span className={styles.heroHeadingTwo}>Serious analysis for unserious subjects.</span>
         </h1>
         <p className={styles.heroBio}>
           I look at things people interact with casually and take them{" "}
-          <em>embarrassingly seriously.</em> Pop culture, fast food economics,
-          and whatever cultural artifact I can't stop treating like a
-          dissertation subject - then I publish the findings anyway.
+          <em>embarrassingly seriously.</em> Whether it's pop culture, fast food economics,
+          or whatever cultural artifact I can't stop treating like a
+          dissertation subject - I deep dive, have some self-doubt, then publish the findings anyway.
         </p>
         <nav className={styles.creativeNav}>
           <div className={styles.creativeNavButtons}>

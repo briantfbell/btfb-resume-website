@@ -133,7 +133,7 @@ function Work() {
 
       <div className={`${styles.workGroup} ${styles.workGroupGrid}`}>
         <div className={styles.workLeft}>
-          <div className={styles.workGroupLabel}>Ideas / In Production</div>
+          <div className={styles.workGroupLabel}>Production Slate </div>
           <div className={`${styles.workItems} ${styles.workItemsGrid}`}>
             {inProduction.map((item) => (
               <div key={item.title} className={styles.workItem}>
