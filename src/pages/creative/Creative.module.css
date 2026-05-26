@@ -20,8 +20,32 @@
 .creativeNav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 16px;
   margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.creativeNavSocials {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.creativeNavSocialLink {
+  color: #9a9080;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.creativeNavSocialLink:hover {
+  color: #1a1814;
+}
+
+.creativeNavButtons {
+  display: flex;
+  gap: 40px;
   flex-wrap: wrap;
 }
 
@@ -134,7 +158,7 @@
 .divider {
   height: 1px;
   background: #d4cfc4;
-  margin: 24px 0;
+  margin-bottom: 24px;
 }
 
 /* ── WORK ── */
@@ -150,10 +174,10 @@
   letter-spacing: 0.22em;
   text-transform: uppercase;
   color: #9a9080;
-  margin-bottom: 24px;
   display: flex;
   align-items: center;
   gap: 12px;
+  margin-bottom: 30px;
 }
 
 .workGroupLabel::after {
@@ -321,8 +345,8 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 900px;
-  margin-bottom: 48px;
+  max-width: 1050px;
+  margin-bottom: 30px;
 }
 
 .askList {
@@ -352,6 +376,48 @@
   margin-left: 82px;
 }
 
+.askNumberBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2.5rem 0 2rem 0;
+}
+
+.askNumber {
+  margin-top: 0.7rem;
+  font-size: clamp(3rem, 7vw, 3.5rem);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  align-items: center;
+  text-align: center;
+}
+
+.askDuration {
+  margin: 0.9rem auto 0 auto;
+
+  text-align: center;
+  max-width: 600px;
+
+  font-size: 1.05rem;
+  line-height: 1.5;
+
+  opacity: 0.82;
+}
+
+.askMoney {
+  color: #1d8f47;
+}
+
+.askTime {
+  color: #b88a16;
+}
+
+.askNumberText {
+  opacity: 0.75;
+}
+
 .roadmapSection {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -378,13 +444,11 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  padding: 48px 0;
 }
 
 .planPhaseHeader {
   display: flex;
   align-items: baseline;
-  gap: 16px;
 }
 
 .planPhaseNumber {
@@ -617,7 +681,7 @@
   font-size: 15px;
   line-height: 1.7;
   color: #4a4438;
-  max-width: 800px;
+  max-width: 1050px;
 }
 
 .footerNum {

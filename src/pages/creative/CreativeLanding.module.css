@@ -1,40 +1,56 @@
 .container {
-    max-width: 720px;
-    padding-top: 8px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    animation: fadeUp 0.7s ease both;
+  max-width: 720px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: fadeUp 0.7s ease both;
 }
 
 .chapterTitle {
-    font-family: var(--font-serif);
-    font-size: 20px;
-    font-style: italic;
-    color: #8b6914;
-    margin-top: 8px;
-    line-height: 1.4;
+  font-family: var(--font-serif);
+  font-size: 20px;
+  font-style: italic;
+  color: #8b6914;
+  margin-top: 8px;
+  line-height: 1.4;
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .paragraph {
-    font-size: 15px;
-    line-height: 1.8;
-    color: #1a1814;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #1a1814;
+}
+
+.landing {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  align-items: start;
+}
+
+.photoCol {
+  top: 40px;
+}
+
+.photo {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
 }
 
 @keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(16px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

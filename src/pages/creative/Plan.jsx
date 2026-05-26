@@ -6,9 +6,9 @@ const phases = [
     id: "current-state",
     number: "00",
     label: "Current State",
-    timeline: "As of 2025",
-    heading: "What exists without resources.",
-    body: "brianTFbell is a YouTube channel with 638,000 lifetime views, 1,644 subscribers, and two videos published in the last year. The content works. The top video has a 90.7% like rate. The Discord video has a 99.2% like rate. The constraint has never been quality or concept. It has been time. Every video on this channel was made by one person, around a full-time military career, with no dedicated production budget, no editor, and no system. This is the baseline.",
+    timeline: "Now",
+    heading: "The channel works when it exists.",
+    body: "brianTFbell is a small YouTube channel with 638,000 lifetime views, 1,644 subscribers, and two videos published in the last year. The issue is not that the work has no audience. The issue is that the work appears, performs, and then disappears again while the next video gets built around a full-time career.",
     metrics: [
       { label: "Lifetime views", value: "638K" },
       { label: "Subscribers", value: "1,644" },
@@ -16,139 +16,150 @@ const phases = [
       { label: "Operators", value: "1" },
     ],
     milestones: [],
-    callout:
-      "The channel isn't small because the content is bad. It's small because there's been no runway to make it consistently.",
+    callout: "The first business problem is not discovery. It is consistency.",
   },
   {
-    id: "pre-production",
+    id: "phase-1",
     number: "01",
-    label: "Pre-Production",
-    timeline: "Month 0 - 2",
-    heading: "Build before you launch.",
-    body: "No content goes out until the system is ready to sustain it. The failure mode for creator channels isn't bad content - it's inconsistent content. Pre-production exists to make sure the first video isn't also the last for six months.",
-    metrics: null,
-    milestones: [
-      {
-        tag: "M0",
-        title: "Systems setup",
-        detail:
-          "Workflow locked. Production templates built. Editing pipeline established. Channel audit complete.",
-      },
-      {
-        tag: "M1",
-        title: "Studio scouting",
-        detail:
-          "Commercial space identified. Equipment list finalized. AliExpress, Amazon, and Walmart orders placed for builds.",
-      },
-      {
-        tag: "M2",
-        title: "Content pipeline ready",
-        detail:
-          "Three videos banked before first upload. Editing workflow stress-tested. Publishing cadence scheduled.",
-      },
-    ],
-    callout: null,
-  },
-  {
-    id: "year-1",
-    number: "02",
-    label: "Year 1",
-    timeline: "Month 1 - 12",
-    heading: "Establish cadence. Prove the format.",
-    body: "Two content series launch in Year 1. The opinion/analysis series is the existing channel - same voice, more consistent. The I Can Do That series is new: find a project someone else built with professional resources, rebuild it from scratch using accessible parts, write the code, post the repo. Each build video gets a short-form cut distributed across TikTok, Instagram, and Facebook.",
+    label: "Phase 1",
+    timeline: "Months 0 - 12",
+    heading: "Make the channel consistent.",
+    body: "The first goal is simple: publish one strong long-form video every month and turn each release into short-form clips for YouTube Shorts, Instagram, TikTok, and Facebook. Long-form builds trust. Short-form creates discovery. The point is not to become a content farm. The point is to build a repeatable rhythm without losing the voice that made the work worth watching.",
     metrics: [
-      { label: "Target subscribers", value: "8K+" },
-      { label: "Long-form videos", value: "24" },
-      { label: "Short-form pieces", value: "100+" },
-      { label: "GitHub repos", value: "12+" },
+      { label: "Long-form videos", value: "12+" },
+      { label: "Short-form clips", value: "100+" },
+      { label: "Primary platforms", value: "4" },
+      { label: "Core format", value: "Commentary" },
     ],
     milestones: [
       {
         tag: "Q1",
-        title: "Opinion/analysis series launches",
+        title: "Production system built",
         detail:
-          "1 long-form video per month. 2-3 misc shorts per month. Fast Food Rewards Point Economics drops as the anchor piece.",
+          "Writing, filming, editing, thumbnail, publishing, and clipping workflows documented and tested.",
       },
       {
         tag: "Q2",
-        title: "I Can Do That series launches",
+        title: "Monthly cadence established",
         detail:
-          "1 build video per month. 1 short-form cut per month across platforms. Debut build: a compass that always points to the nearest Chili's. GitHub repo public.",
+          "One long-form video published each month with short-form clips cut from each release.",
       },
       {
         tag: "Q3",
-        title: "Cadence locked",
+        title: "Distribution loop refined",
         detail:
-          "2 long-form videos per month. ~4 short-form per month. All repos public and documented.",
+          "Shorts, Reels, TikToks, and Facebook clips tested to identify what actually drives new viewers back to the channel.",
       },
       {
         tag: "Q4",
-        title: "Year 1 review",
+        title: "Format review",
         detail:
-          "Content audit. Top-performing formats identified. Year 2 production plan finalized based on data.",
+          "Best-performing topics, hooks, structures, and clip formats identified before scaling output further.",
       },
     ],
     callout:
-      "The I Can Do That format is built for compounding. Every build video produces a repo, a short-form cut, and a documented process anyone can follow. The audience grows because the content is useful, not just entertaining.",
+      "The channel gets funded first so the creator can stop treating every upload like a miracle.",
   },
   {
-    id: "year-2",
-    number: "03",
-    label: "Year 2",
-    timeline: "Month 13 - 24",
-    heading: "Scale the operation. Build the infrastructure.",
-    body: "Year 2 is where the channel becomes a business. Production quality steps up - sourced interviews, original data, on-location where it makes sense. Short-form goes daily. The studio concept gets piloted: a commercial space built out with a green screen room, podcast bay, photo studio, and editing workstations available by the hour. The channel subsidizes the overhead. The overhead gives the channel a permanent home.",
+    id: "phase-2",
+    number: "02",
+    label: "Phase 2",
+    timeline: "Months 12 - 24",
+    heading: "Add production support without sanding off the voice.",
+    body: "Once the cadence is proven, the next step is removing the single-person bottleneck. Editing help, production assistance, better equipment, and repeatable templates allow the channel to increase output while keeping the writing and creative direction creator-led. This is the transition from hobby workflow to small media operation.",
     metrics: [
-      { label: "Target subscribers", value: "40K+" },
-      { label: "Short-form cadence", value: "Daily" },
-      { label: "Revenue streams", value: "2+" },
-      { label: "Studio bays", value: "3+" },
+      { label: "Long-form cadence", value: "1-2 / month" },
+      { label: "Short-form cadence", value: "Several / week" },
+      { label: "Production team", value: "2-3" },
+      { label: "Revenue tests", value: "2+" },
     ],
     milestones: [
       {
         tag: "Q5",
-        title: "Production quality steps up",
+        title: "Editor/workflow support added",
         detail:
-          "Sourced interviews. Original data sets. On-location shoots where relevant. Guest collaborators on I Can Do That builds.",
+          "Bring in editing or post-production help to reduce turnaround time without outsourcing the identity of the channel.",
       },
       {
         tag: "Q6",
-        title: "Studio concept piloted",
+        title: "Revenue experiments begin",
         detail:
-          "Commercial lease signed. Green screen room, podcast bay, photo studio, and editing workstations built out. Available by the hour to outside creators.",
+          "Test platform revenue, sponsorships, affiliate opportunities, and project-based partnerships that fit the channel instead of cheapening it.",
       },
       {
         tag: "Q7",
-        title: "First brand deal",
+        title: "Collaborative formats tested",
         detail:
-          "Channel revenue covers production costs. Studio rental revenue covers overhead. Two independent income streams from one operation.",
+          "Bring in guests, collaborators, or build partners where they make the video better, not just bigger.",
       },
       {
         tag: "Q8",
-        title: "Systems stable",
+        title: "Operating model reviewed",
         detail:
-          "Daily short-form. Consistent long-form. Studio operating. All three revenue streams active.",
+          "Keep what compounds. Cut what only sounded smart in a plan. Decide what deserves more money, space, or people.",
       },
     ],
     callout:
-      "The studio isn't a vanity project. It's the infrastructure that makes daily output sustainable without burning out a single operator. The channel funds the studio. The studio funds the channel.",
+      "The goal is not to professionalize the weirdness out of the channel. The goal is to make the weirdness easier to produce.",
+  },
+  {
+    id: "phase-3",
+    number: "03",
+    label: "Phase 3",
+    timeline: "Months 24+",
+    heading: "Pilot a creator workspace.",
+    body: "If the channel and community prove the demand, the next expansion is a small collaborative production space: a practical digital creator workshop with a green screen area, cameras, microphones, a podcast room, computers, and editing software. Think woodworking shop or pottery studio, but for people making videos, podcasts, thumbnails, clips, and weird internet projects.",
+    metrics: [
+      { label: "Green screen", value: "1" },
+      { label: "Podcast room", value: "1" },
+      { label: "Editing stations", value: "2+" },
+      { label: "Rental model", value: "Hourly / member" },
+    ],
+    milestones: [
+      {
+        tag: "S1",
+        title: "Internal studio first",
+        detail:
+          "Build a small production space primarily to support the channel, improve output, and reduce production friction.",
+      },
+      {
+        tag: "S2",
+        title: "Limited creator access",
+        detail:
+          "Open the space selectively to local creators, collaborators, and small teams to test real demand before committing to a larger footprint.",
+      },
+      {
+        tag: "S3",
+        title: "Rental model tested",
+        detail:
+          "Compare hourly rentals, memberships, workshops, and private production support against overhead, scheduling friction, and equipment wear.",
+      },
+      {
+        tag: "S4",
+        title: "Scale or stay small",
+        detail:
+          "If the economics work, expand. If they do not, keep the space as internal infrastructure for the media operation.",
+      },
+    ],
+    callout:
+      "The studio is not the company. The studio is infrastructure - useful only if it helps better work get made more often.",
   },
   {
     id: "end-state",
     number: "04",
     label: "End State",
-    timeline: "Month 24+",
-    heading: "A professional creator-led media organization.",
-    body: "A predictable, high-output production cycle delivering consistent idea-first content across platforms. A durable high-trust audience built on quality and consistency. A studio operation that generates independent revenue while supporting the channel. Long-term monetization across brand partnerships, studio rental, and platform revenue. This is what the channel looks like when time stops being the constraint.",
+    timeline: "Long term",
+    heading: "A creator-led media operation with a physical home.",
+    body: "The end state is a sustainable creator business built around long-form videos, short-form distribution, and eventually a practical space for digital creators to make things together. The channel builds the audience. The audience validates the community. The workspace gives the operation a home. Each piece should make the others stronger, or it should not exist.",
     metrics: [
-      { label: "Subscriber target", value: "50K+" },
-      { label: "Content cadence", value: "Daily" },
-      { label: "Platform presence", value: "4+" },
+      { label: "Core business", value: "Media" },
+      { label: "Discovery engine", value: "Short-form" },
+      { label: "Community layer", value: "Workspace" },
       { label: "Revenue streams", value: "3+" },
     ],
     milestones: [],
     callout:
-      "The ask isn't to fund a lifestyle. It's to buy enough time to build something that sustains itself.",
+      "The ask is not to fund a lifestyle. It is to buy enough time to build a creator business that can eventually sustain itself.",
   },
 ];
 
@@ -159,15 +170,18 @@ function Plan() {
     const observers = phases.map((phase) => {
       const el = document.getElementById(phase.id);
       if (!el) return null;
+
       const observer = new IntersectionObserver(
         ([entry]) => {
           if (entry.isIntersecting) setActiveSection(phase.id);
         },
         { threshold: 0.3 },
       );
+
       observer.observe(el);
       return observer;
     });
+
     return () => observers.forEach((o) => o && o.disconnect());
   }, []);
 
@@ -181,7 +195,9 @@ function Plan() {
         {phases.map((phase) => (
           <button
             key={phase.id}
-            className={`${styles.planNavBtn} ${activeSection === phase.id ? styles.planNavBtnActive : ""}`}
+            className={`${styles.planNavBtn} ${
+              activeSection === phase.id ? styles.planNavBtnActive : ""
+            }`}
             onClick={() => scrollTo(phase.id)}
           >
             {phase.label}
@@ -252,30 +268,37 @@ function Plan() {
 
       <div className={styles.footer}>
         <div className={styles.footerHeading}>Ready to talk?</div>
+
         <div className={styles.footerItem}>
           <span className={styles.footerNum}>01</span>
           <span>
-            You've read The Ask and The Plan and you want to know more about the
-            person behind them.
+            You've read The Ask and The Plan and want to know more about the
+            person trying to make this weird little machine work.
           </span>
         </div>
+
         <br />
+
         <div className={styles.footerItem}>
           <span className={styles.footerNum}>02</span>
           <span>
-            You have capital, a network, or an opportunity that fits what you
-            just read.
+            You have capital, a network, or an opportunity that fits the next
+            stage of the channel.
           </span>
         </div>
+
         <br />
+
         <div className={styles.footerItem}>
           <span className={styles.footerNum}>03</span>
           <span>
             You just want to talk about fast food rewards point economics.
-            That's fine too.
+            That's also acceptable.
           </span>
         </div>
+
         <br />
+
         <a href="mailto:briantfbell@gmail.com" className={styles.footerCta}>
           briantfbell@gmail.com
         </a>

@@ -41,27 +41,27 @@ const longForm = [
 const inProduction = [
   {
     title: "The Assassination of Quiznos by the Coward Subway",
-    meta: "Script: In Progress · Data collected",
-    note: "Quiznos was better. Toasted bread, actually good ingredients, and commercials featuring what can only be described as rat creatures screaming about subs. Then Subway launched the $5 Footlong in 2008 and used the recession to drag everyone to the bottom. Quiznos couldn't match the price without torching their whole thing, so they didn't, and then they were gone. The punchline is that a Subway footlong runs you $15 now. They killed the good sandwich shop to become the cheap option, and then stopped being that too.",
+    meta: "Script: In Progress",
+    note: "Quiznos was just better. When Subway launched the $5 Footlong in 2008 and used the recession to drag everyone to the bottom, Quiznos couldn't match the price without torching their whole thing, so they didn't, and now they're all but gone. The punchline is that a Subway footlong runs you $15 now. They killed the good sandwich shop to become the cheap option, and then stopped being that too. And even if we ignore the food, you can't forget the commercials featuring those little rat freaks scream-singing about subs.",
     link: null,
   },
   {
     title: "Evolution of the Boogaloo Aesthetic",
-    meta: "Script: Not Started",
-    note: "The Boogaloo movement started as a joke about a second civil war, and somehow the most lasting thing it produced was a really good Instagram feed. What began as libertarians in Hawaiian shirts has quietly mutated into something nobody saw coming - Japanese street cars, goth girls, submachine guns decked out in Baja Blast blue, and art direction so good you forget the brand started in a random militia forum. The politics are still in the DNA. But at this point the aesthetic has outgrown the ideology, and that's the more interesting story.",
+    meta: "Script: Pending",
+    note: "What began as libertarians in Hawaiian shirts half-joking about the second Civil War has quietly mutated into something nobody saw coming: Japanese street cars, goth girls, submachine guns covered in Baja Blast blue furniture, and art direction so good you forget the brand started in a random militia forum. The politics are still in the DNA, but at this point the aesthetic has outgrown the ideology, and it's those limited edition merch drops and bright pink anime quad-tube NVG giveaways that make the more interesting story.",
     link: null,
   },
   {
     title: "Rewatching Kids' Movies through Adult Eyes",
-    meta: "Script: Not Started",
-    note: "There's a trend of TikTok edits with clips from a movie you haven't thought about since 2008, slaps an Ethel Cain track over it, and suddenly you're relating to the trauma of parental expectation of a panda learning martial arts. And the thing is - the emotion was always there. We just didn't catch it because kids are fucking stupid. When you rewatch you reckon with the fact that Monster House was a tale of grief, Shrek was about shame, and a lot of what we dismissed as silly was doing something real the whole time.",
+    meta: "Script: Pending",
+    note: "There's a trend of TikTok edits with clips from a movie you haven't thought about since 2008, they slap an Ethel Cain track over it, and suddenly you're relating to a panda's trauma of parental expectation while he learns martial arts. And the thing is - the emotion was always there. We just didn't catch it because kids are fucking stupid. Upon rewatch you reckon with the fact that Monster House was a tale of grief, Shrek was about shame, and a lot of what we dismissed as silly was doing something real the whole time.",
     link: null,
   },
 
   {
     title: "The Economics of Fast Food Rewards Points",
-    meta: "Script: In Progress · Data collected",
-    note: "A dollar is a dollar is a dollar, except it isn't. Because not all rewards points are created equal. When fast food restaurants started offering me free stuff for downloading an app, well... I'm only human. So here's the thing - So I visited several major fast food chains, built an excel sheet that wound up exceeding the width of my 43\"\ monitor, and tried to figure out which one is actually giving you the best bang for your buck. I didn't do Starbucks; their reward system is weird and their food sucks.",
+    meta: "Script: In Progress · Heaps of Data collected",
+    note: "A dollar is a dollar is a dollar, except it isn't. Because not all rewards points are created equal. When fast food restaurants started offering me free stuff for downloading an app, and well... I'm only human. So I visited several major fast food chains, built an excel sheet that wound up exceeding the width of my 43\"\ monitor, and tried to figure out which one is actually giving you the best bang for your buck. I didn't do Starbucks; their reward system is weird and their food sucks.",
     link: null,
   },
 ];

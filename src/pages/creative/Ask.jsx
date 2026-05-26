@@ -21,11 +21,13 @@ function Ask() {
           <p className={styles.roadmapCopy}>
             I post twice a year because I have a day job. Give me the runway to
             do this full time and here's what that looks like: one long-form
-            video a month, short-form daily, production that scales as the
-            channel does. The roadmap is real. The ask is simple. Corporate
-            Brian can explain.
+            video a month, short-form daily, and production support that scales
+            with the channel instead of choking it. The roadmap is real and the
+            ask is simple. Click over on the right there and corporate Brian can
+            explain:
           </p>
         </div>
+
         <div className={styles.askEmbedColumn}>
           <div className={styles.embedWrap} onClick={handlePlay}>
             <iframe
@@ -49,101 +51,68 @@ function Ask() {
           </div>
         </div>
       </div>
+
       <div className={styles.divider} />
+
       <div className={styles.askStatement}>
         <div className={styles.workGroupLabel}>Mission Statement</div>
         <p className={styles.roadmapCopy}>
-          Build and scale a professional online media organization that produces
-          high-quality, idea-first content on discipline, identity, and modern
-          life in order to establish a scalable content infrastructure, a
-          durable high-trust audience, and a long-term monetization engine
-          across platforms.
+          Build a creator-led media brand around comedy, commentary, and
+          internet culture - making thoughtful, funny videos for people who grew
+          up online and never fully left.
         </p>
       </div>
 
       <div className={styles.askStatement}>
         <div className={styles.workGroupLabel}>Problem Statement</div>
         <p className={styles.roadmapCopy}>
-          How does brianTFbell scale from a high-potential content platform with
-          a proven concept and demonstrated audience reach into a consistent,
-          high-output media operation when full-time professional obligations
-          constrain available time, bandwidth, and execution capacity;
-          production, editing, and publishing are performed by a single
-          operator; irregular output degrades audience growth and platform
-          performance; no repeatable system exists to sustain scalable content
-          delivery; and maintaining high content quality is essential to
-          long-term brand value?
+          The channel has already proven it can make distinctive work. The
+          problem is consistency. Right now every video is researched, written,
+          filmed, edited, and published by one person working around a full-time
+          career. When a video ships, the audience responds. Then the channel
+          goes quiet while the next one slowly gets made.
         </p>
       </div>
 
       <div className={styles.askStatement}>
         <div className={styles.workGroupLabel}>What I'm Asking For</div>
-        <p className={styles.roadmapCopy}>
-          Targeted resourcing to enable the transition from a single-operator,
-          time-constrained content platform to a scalable, repeatable media
+        <div className={styles.askNumber}>
+          <span className={styles.askMoney}>$X</span>
+          <span className={styles.askNumberText}> for </span>
+          <span className={styles.askTime}>Y </span>
+          <span className={styles.askNumberText}> months</span>
+        </div>
+        <div className={styles.askDuration}>
+          The point is not an exact number. The point is enough runway to turn
+          this from an occasional high-effort project into a real production
           operation.
-        </p>
+        </div>
+
         <ul className={styles.askList}>
           <li>
-            <span className={styles.askListLabel}>Time leverage</span> - Funding
-            that offsets the opportunity cost of full-time professional
-            obligations, creating dedicated capacity for consistent content
-            production
+            <span className={styles.askListLabel}>Time leverage</span> - The
+            ability to dedicate serious working hours to writing, filming,
+            editing, and publishing instead of fitting the channel into whatever
+            time is left over
           </li>
           <li>
             <span className={styles.askListLabel}>Production support</span> -
-            Editing and workflow assistance that removes the single-operator
-            bottleneck without degrading content quality
+            Editing and workflow help that removes the single-person bottleneck
+            without sanding off the voice that makes the work worth watching
           </li>
           <li>
-            <span className={styles.askListLabel}>Systems development</span> -
-            Operational runway to build repeatable production systems,
-            publishing cadence, and audience growth loops that sustain output at
-            scale
+            <span className={styles.askListLabel}>Creative infrastructure</span>{" "}
+            - A repeatable system for producing long-form videos, short-form
+            clips, recurring formats, and future live or community-based ideas
           </li>
         </ul>
+        <div className={styles.divider} />
         <p className={styles.roadmapCopy}>
-          <span className={styles.askListLabel}>End state:</span> A professional
-          creator-led media organization operating on a predictable, high-output
-          production cycle - delivering consistent idea-first content, driving
-          sustained audience growth, and generating durable monetization across
-          platforms.
+          <span className={styles.askListLabel}>End state:</span> A consistent,
+          creator-led media operation with a clear voice, a repeatable
+          publishing cycle, and room to grow beyond videos without turning into
+          generic creator-economy slop.
         </p>
-      </div>
-      <div className={styles.divider} />
-      <div className={styles.footer}>
-        <div className={styles.footerHeading}>
-          If you fall into one of the below categories, let's talk!.
-        </div>
-        <div className={styles.footerItem}>
-          <span className={styles.footerNum}>01</span>
-          <span>
-            You back creators with a clear point of view and proven execution -
-            and you’re interested in what happens when that operator is given
-            the time and resources to scale.
-          </span>
-        </div>
-        <br />
-        <div className={styles.footerItem}>
-          <span className={styles.footerNum}>02</span>
-          <span>
-            You’re building in media or the creator space and need someone who
-            can operate at both the strategic and execution level - someone who
-            can build the thing.
-          </span>
-        </div>
-        <br />
-        <div className={styles.footerItem}>
-          <span className={styles.footerNum}>03</span>
-          <span>
-            You have a weird, obsessive idea and you want to know if it’s real -
-            or if it can be turned into something real.
-          </span>
-        </div>
-
-        <a href="mailto:briantfbell@gmail.com" className={styles.footerCta}>
-          briantfbell@gmail.com
-        </a>
       </div>
     </div>
   );
