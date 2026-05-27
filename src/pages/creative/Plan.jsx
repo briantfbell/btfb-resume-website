@@ -7,27 +7,37 @@ const phases = [
     number: "00",
     label: "Current State",
     timeline: "Now",
-    heading: "The channel works when it exists.",
-    body: "brianTFbell is a small YouTube channel with 638,000 lifetime views, 1,644 subscribers, and two videos published in the last year. The issue is not that the work has no audience. The issue is that the work appears, performs, and then disappears again while the next video gets built around a full-time career.",
+    heading: "The channel works. It just doesn't exist enough.",
+    body: (
+      <>
+        brianTFbell has more than 638,000 lifetime views, over 1,600
+        subscribers, but I haven't made a single video in the last year - and
+        trust me, I really hate that.
+        <br />
+        The audience shows up when there's something to show up for. The problem
+        is that between a full-time career and everything else, there usually
+        isn't.
+      </>
+    ),
     metrics: [
       { label: "Lifetime views", value: "638K" },
       { label: "Subscribers", value: "1,644" },
       { label: "Videos / year", value: "2" },
-      { label: "Operators", value: "1" },
+      { label: "Team Size", value: "1" },
     ],
+
     milestones: [],
-    callout: "The first business problem is not discovery. It is consistency.",
   },
   {
     id: "phase-1",
-    number: "01",
-    label: "Phase 1",
+    number: "1st ",
+    label: " Phase",
     timeline: "Months 0 - 12",
-    heading: "Make the channel consistent.",
-    body: "The first goal is simple: publish one strong long-form video every month and turn each release into short-form clips for YouTube Shorts, Instagram, TikTok, and Facebook. Long-form builds trust. Short-form creates discovery. The point is not to become a content farm. The point is to build a repeatable rhythm without losing the voice that made the work worth watching.",
+    heading: "Show Up. Do More.",
+    body: "One long-form video a month. Every release gets cut into short-form clips for YouTube Shorts, Instagram, TikTok, and Facebook. Long-form is where the actual argument lives. Short-form is how new people find it. The goal isn't volume for its own sake - it's building a rhythm that doesn't collapse the moment life gets busy.",
     metrics: [
-      { label: "Long-form videos", value: "12+" },
-      { label: "Short-form clips", value: "100+" },
+      { label: "Long-form videos", value: "12 +" },
+      { label: "Short-form clips", value: "100 +" },
       { label: "Primary platforms", value: "4" },
       { label: "Core format", value: "Commentary" },
     ],
@@ -36,130 +46,130 @@ const phases = [
         tag: "Q1",
         title: "Production system built",
         detail:
-          "Writing, filming, editing, thumbnail, publishing, and clipping workflows documented and tested.",
+          "Writing, filming, editing, thumbnail, publishing, and clipping - all of it documented so it can actually be repeated.",
       },
       {
         tag: "Q2",
-        title: "Monthly cadence established",
+        title: "Monthly cadence locked in",
         detail:
-          "One long-form video published each month with short-form clips cut from each release.",
+          "One long-form video out the door every month with short-form cuts following each release.",
       },
       {
         tag: "Q3",
-        title: "Distribution loop refined",
+        title: "Distribution tested",
         detail:
-          "Shorts, Reels, TikToks, and Facebook clips tested to identify what actually drives new viewers back to the channel.",
+          "Shorts, Reels, TikToks, and Facebook clips go out and we figure out which ones actually bring people back to the channel.",
       },
       {
         tag: "Q4",
         title: "Format review",
         detail:
-          "Best-performing topics, hooks, structures, and clip formats identified before scaling output further.",
+          "Look at what performed, what didn't, and what's worth doing more of before adding more complexity.",
       },
     ],
     callout:
-      "The channel gets funded first so the creator can stop treating every upload like a miracle.",
+      "The first thing funding buys is the ability to stop treating every upload like it might be the last one.",
   },
   {
     id: "phase-2",
-    number: "02",
-    label: "Phase 2",
+    number: "2nd",
+    label: "Phase",
     timeline: "Months 12 - 24",
-    heading: "Add production support without sanding off the voice.",
-    body: "Once the cadence is proven, the next step is removing the single-person bottleneck. Editing help, production assistance, better equipment, and repeatable templates allow the channel to increase output while keeping the writing and creative direction creator-led. This is the transition from hobby workflow to small media operation.",
+    heading: "Get some Assistance.",
+    body: "Once the monthly cadence is real and not just a plan, the bottleneck becomes time. Bringing in editing help, better equipment, and repeatable templates means more videos can get out without the writing and creative direction getting handed off. The voice stays, the grunt work gets shared.",
     metrics: [
-      { label: "Long-form cadence", value: "1-2 / month" },
-      { label: "Short-form cadence", value: "Several / week" },
-      { label: "Production team", value: "2-3" },
-      { label: "Revenue tests", value: "2+" },
+      { label: "Long-form cadence", value: "1 - 2 / Month" },
+      { label: "Short-form cadence", value: " Several Weekly" },
+      { label: "Production team", value: "2 - 3" },
+      { label: "Revenue tests", value: "2 +" },
     ],
     milestones: [
       {
         tag: "Q5",
-        title: "Editor/workflow support added",
+        title: "Editor brought in",
         detail:
-          "Bring in editing or post-production help to reduce turnaround time without outsourcing the identity of the channel.",
+          "Post-production help so turnaround time drops without the channel starting to sound like someone else made it.",
       },
       {
         tag: "Q6",
-        title: "Revenue experiments begin",
+        title: "Revenue experiments start",
         detail:
-          "Test platform revenue, sponsorships, affiliate opportunities, and project-based partnerships that fit the channel instead of cheapening it.",
+          "Platform revenue, sponsorships, affiliate deals - tested against whether they fit the channel or just make it feel gross.",
       },
       {
         tag: "Q7",
-        title: "Collaborative formats tested",
+        title: "Collaborative formats tried",
         detail:
-          "Bring in guests, collaborators, or build partners where they make the video better, not just bigger.",
+          "Guests and collaborators where they make the video better, not just where they make it longer.",
       },
       {
         tag: "Q8",
         title: "Operating model reviewed",
         detail:
-          "Keep what compounds. Cut what only sounded smart in a plan. Decide what deserves more money, space, or people.",
+          "Keep what's working, cut what sounded good in a spreadsheet but wasn't, figure out where more resources actually help.",
       },
     ],
     callout:
-      "The goal is not to professionalize the weirdness out of the channel. The goal is to make the weirdness easier to produce.",
+      "The weirdness doesn't get professionalized out. It just gets easier to produce.",
   },
   {
     id: "phase-3",
-    number: "03",
-    label: "Phase 3",
+    number: "3rd",
+    label: "Phase",
     timeline: "Months 24+",
-    heading: "Pilot a creator workspace.",
-    body: "If the channel and community prove the demand, the next expansion is a small collaborative production space: a practical digital creator workshop with a green screen area, cameras, microphones, a podcast room, computers, and editing software. Think woodworking shop or pottery studio, but for people making videos, podcasts, thumbnails, clips, and weird internet projects.",
+    heading: "Build a Space to Scale.",
+    body: "If the channel and the community are there, the next move is a small production space - green screen, cameras, microphones, a podcast room, editing stations. A woodworking shop for people making videos. Something local creators can actually use, not just a content backdrop for the main channel.",
     metrics: [
-      { label: "Green screen", value: "1" },
-      { label: "Podcast room", value: "1" },
-      { label: "Editing stations", value: "2+" },
-      { label: "Rental model", value: "Hourly / member" },
+      { label: "Green Screen & Lighting Setup", value: "1" },
+      { label: "Production Rooms", value: "4" },
+      { label: "Editing stations", value: "2 +" },
+      { label: "Rental model", value: "Hourly Rate" },
     ],
     milestones: [
       {
         tag: "S1",
         title: "Internal studio first",
         detail:
-          "Build a small production space primarily to support the channel, improve output, and reduce production friction.",
+          "A small production space built primarily to make the channel better and faster, before anyone else uses it.",
       },
       {
         tag: "S2",
-        title: "Limited creator access",
+        title: "Limited outside access",
         detail:
-          "Open the space selectively to local creators, collaborators, and small teams to test real demand before committing to a larger footprint.",
+          "Open it up to a handful of local creators and collaborators to see if the demand is actually there.",
       },
       {
         tag: "S3",
         title: "Rental model tested",
         detail:
-          "Compare hourly rentals, memberships, workshops, and private production support against overhead, scheduling friction, and equipment wear.",
+          "Hourly, membership, workshops - run the numbers against real overhead and figure out what actually works.",
       },
       {
         tag: "S4",
         title: "Scale or stay small",
         detail:
-          "If the economics work, expand. If they do not, keep the space as internal infrastructure for the media operation.",
+          "If the economics make sense, grow it. If they don't, it stays as infrastructure for the channel and that's fine too.",
       },
     ],
     callout:
-      "The studio is not the company. The studio is infrastructure - useful only if it helps better work get made more often.",
+      "The studio only matters if it makes better work possible. Otherwise it's just an expensive room.",
   },
   {
     id: "end-state",
-    number: "04",
+    number: "∞",
     label: "End State",
     timeline: "Long term",
-    heading: "A creator-led media operation with a physical home.",
-    body: "The end state is a sustainable creator business built around long-form videos, short-form distribution, and eventually a practical space for digital creators to make things together. The channel builds the audience. The audience validates the community. The workspace gives the operation a home. Each piece should make the others stronger, or it should not exist.",
+    heading: "A Media Operation with a Physical Home.",
+    body: "Long-form videos with a real publishing cadence, short-form distribution that feeds new people into the channel, and a practical space where creators can actually make things. None of it needs to be big. It just needs to work - and each part of it should make the others better, or it probably shouldn't exist.",
     metrics: [
       { label: "Core business", value: "Media" },
-      { label: "Discovery engine", value: "Short-form" },
+      { label: "Discovery engine", value: "Short-Form" },
       { label: "Community layer", value: "Workspace" },
-      { label: "Revenue streams", value: "3+" },
+      { label: "Revenue streams", value: "3 +" },
     ],
     milestones: [],
     callout:
-      "The ask is not to fund a lifestyle. It is to buy enough time to build a creator business that can eventually sustain itself.",
+      "Ultimately, this is a plan to build something that can eventually pay for itself.",
   },
 ];
 
