@@ -9,10 +9,11 @@ function CreativeLanding() {
           <p className={styles.paragraph}>
             Hi, I'm Brian - or brianTFbell as I go by online. I started making
             videos in 2019 because I was deployed to South Korea with too much
-            time on my hands. Since then, the Army kept me busy enough that posting was
-            never consistent, but the thinking never stopped. At some point I
-            realized the gap between "guy with a YouTube channel" and "person
-            who takes this seriously" wasn't talent or ideas - it was time.
+            time on my hands. Since then, the Army kept me busy enough that
+            posting was never consistent, but the thinking never stopped. At
+            some point I realized the gap between "guy with a YouTube channel"
+            and "person who takes this seriously" wasn't talent or ideas, just
+            time.
           </p>
 
           {/* CHAPTER 1 */}
@@ -40,12 +41,12 @@ function CreativeLanding() {
           <div className={styles.content}>
             <p className={styles.paragraph}>
               There's a version of cultural commentary that treats its subjects
-              as disposable - quick takes, fast opinions, move on. I'm
+              as disposable - quick takes, fast opinions, then move on. I'm
               interested in the opposite. What happens when you apply genuine
               rigor to something the internet has already decided isn't worth
               it? When you build an actual argument instead of a reaction? I
-              think you get something that surprises people - not because the
-              subject is serious, but because the treatment is.
+              think the result might surprise people, or at least make them
+              laugh.
             </p>
           </div>
 
@@ -57,8 +58,9 @@ function CreativeLanding() {
             <p className={styles.paragraph}>
               A well-constructed argument delivered as a story doesn't just
               inform - it changes how someone sees something they thought they
-              already understood. That's what I'm building toward. <br/>The subjects
-              are sometimes silly, but that doesn't mean they can't also be interesting.
+              already understood. That's what I'm building toward. <br />
+              The subjects are sometimes silly, but that doesn't mean they can't
+              also be interesting.
             </p>
           </div>
         </div>

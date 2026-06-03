@@ -2,9 +2,9 @@ import styles from "./Creative.module.css";
 
 const work = [
   {
-    category: "Other Creative Things I've Done, either professionally or at least semi-professionally",
+    category:
+      "Other Creative Things I've Done, either professionally or at least semi-professionally",
     items: [
-
       {
         title: "Off-Duty Designs",
         meta: "Founder · Military merch LLC",
@@ -19,7 +19,6 @@ const work = [
       },
     ],
   },
-
 ];
 
 function OtherStuff() {

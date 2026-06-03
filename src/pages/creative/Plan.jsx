@@ -4,19 +4,21 @@ import styles from "./Creative.module.css";
 const phases = [
   {
     id: "current-state",
+    navLabel: "Current State",
     number: "00",
     label: "Current State",
     timeline: "Now",
     heading: "The channel works. It just doesn't exist enough.",
     body: (
       <>
-        brianTFbell has more than 638,000 lifetime views, over 1,600
-        subscribers, but I haven't made a single video in the last year - and
-        trust me, I really hate that.
+        brianTFbell (the YouTube channel) has more than 638,000 lifetime views,
+        over 1,600 subscribers, but I haven't made a single video in the last
+        year - and trust me, I really hate that.
         <br />
-        The audience shows up when there's something to show up for. The problem
-        is that between a full-time career and everything else, there usually
-        isn't.
+        The audience shows up when there's something to show up for.
+        <br />
+        The problem is that between a full-time career and everything else,
+        there usually isn't.
       </>
     ),
     metrics: [
@@ -30,6 +32,7 @@ const phases = [
   },
   {
     id: "phase-1",
+    navLabel: "Phase 1",
     number: "1st ",
     label: " Phase",
     timeline: "Months 0 - 12",
@@ -67,11 +70,10 @@ const phases = [
           "Look at what performed, what didn't, and what's worth doing more of before adding more complexity.",
       },
     ],
-    callout:
-      "The first thing funding buys is the ability to stop treating every upload like it might be the last one.",
   },
   {
     id: "phase-2",
+    navLabel: "Phase 2",
     number: "2nd",
     label: "Phase",
     timeline: "Months 12 - 24",
@@ -109,11 +111,10 @@ const phases = [
           "Keep what's working, cut what sounded good in a spreadsheet but wasn't, figure out where more resources actually help.",
       },
     ],
-    callout:
-      "The weirdness doesn't get professionalized out. It just gets easier to produce.",
   },
   {
     id: "phase-3",
+    navLabel: "Phase 3",
     number: "3rd",
     label: "Phase",
     timeline: "Months 24+",
@@ -151,11 +152,10 @@ const phases = [
           "If the economics make sense, grow it. If they don't, it stays as infrastructure for the channel and that's fine too.",
       },
     ],
-    callout:
-      "The studio only matters if it makes better work possible. Otherwise it's just an expensive room.",
   },
   {
     id: "end-state",
+    navLabel: "End State",
     number: "∞",
     label: "End State",
     timeline: "Long term",
@@ -168,8 +168,6 @@ const phases = [
       { label: "Revenue streams", value: "3 +" },
     ],
     milestones: [],
-    callout:
-      "Ultimately, this is a plan to build something that can eventually pay for itself.",
   },
 ];
 
@@ -210,7 +208,7 @@ function Plan() {
             }`}
             onClick={() => scrollTo(phase.id)}
           >
-            {phase.label}
+            {phase.navLabel}
           </button>
         ))}
       </nav>
@@ -268,6 +266,7 @@ function Plan() {
                 </div>
               )}
             </div>
+            <br />
           </div>
 
           {i < phases.length - 1 && <div className={styles.divider} />}
@@ -275,15 +274,17 @@ function Plan() {
       ))}
 
       <div className={styles.divider} />
-
+      <br />
       <div className={styles.footer}>
-        <div className={styles.footerHeading}>Ready to talk?</div>
+        <div className={styles.footerHeading}>
+          Now that you've read all that, feel free to reach out if:
+        </div>
 
         <div className={styles.footerItem}>
           <span className={styles.footerNum}>01</span>
           <span>
-            You've read The Ask and The Plan and want to know more about the
-            person trying to make this weird little machine work.
+            You want to know more about the person trying to make this weird
+            little machine work.
           </span>
         </div>
 
@@ -302,8 +303,8 @@ function Plan() {
         <div className={styles.footerItem}>
           <span className={styles.footerNum}>03</span>
           <span>
-            You just want to talk about fast food rewards point economics.
-            That's also acceptable.
+            You just want to see my Excel table with all the fast food rewards
+            point data. That's cool too.
           </span>
         </div>
 
