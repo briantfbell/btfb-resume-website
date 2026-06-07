@@ -13,21 +13,19 @@ const phases = [
       <>
         brianTFbell (the YouTube channel) has more than 638,000 lifetime views,
         over 1,600 subscribers, but I haven't made a single video in the last
-        year - and trust me, I really hate that.
+        year - and trust me, I really hate that. The audience shows up when
+        there's something to show up for.
         <br />
-        The audience shows up when there's something to show up for.
-        <br />
-        The problem is that between a full-time career and everything else,
-        there usually isn't.
+        The problem is that the Army is a pretty time-consuming job, so making
+        that 'something to show up for' takes a bit.
       </>
     ),
     metrics: [
       { label: "Lifetime views", value: "638K" },
-      { label: "Subscribers", value: "1,644" },
+      { label: "Subscribers", value: "1,634" },
       { label: "Videos / year", value: "2" },
       { label: "Team Size", value: "1" },
     ],
-
     milestones: [],
   },
   {
@@ -70,6 +68,8 @@ const phases = [
           "Look at what performed, what didn't, and what's worth doing more of before adding more complexity.",
       },
     ],
+    callout:
+      "The first thing funding buys is the ability to stop treating every upload like it might be the last one.",
   },
   {
     id: "phase-2",
@@ -78,10 +78,10 @@ const phases = [
     label: "Phase",
     timeline: "Months 12 - 24",
     heading: "Get some Assistance.",
-    body: "Once the monthly cadence is real and not just a plan, the bottleneck becomes time. Bringing in editing help, better equipment, and repeatable templates means more videos can get out without the writing and creative direction getting handed off. The voice stays, the grunt work gets shared.",
+    body: "Once the monthly cadence is real and not just a plan, the bottleneck becomes time. Bringing in editing help, better equipment, and repeatable templates means more videos can get out without the writing and creative direction getting handed off. The voice stays but the legwork is shared.",
     metrics: [
       { label: "Long-form cadence", value: "1 - 2 / Month" },
-      { label: "Short-form cadence", value: " Several Weekly" },
+      { label: "Short-form cadence", value: "Several Weekly" },
       { label: "Production team", value: "2 - 3" },
       { label: "Revenue tests", value: "2 +" },
     ],
@@ -108,9 +108,11 @@ const phases = [
         tag: "Q8",
         title: "Operating model reviewed",
         detail:
-          "Keep what's working, cut what sounded good in a spreadsheet but wasn't, figure out where more resources actually help.",
+          "Keep what's working, cut what only sounded good in my notes, figure out where more resources actually help.",
       },
     ],
+    callout:
+      "The weirdness doesn't get professionalized out. It just gets easier to produce.",
   },
   {
     id: "phase-3",
@@ -119,39 +121,37 @@ const phases = [
     label: "Phase",
     timeline: "Months 24+",
     heading: "Build a Space to Scale.",
-    body: "If the channel and the community are there, the next move is a small production space - green screen, cameras, microphones, a podcast room, editing stations. A woodworking shop for people making videos. Something local creators can actually use, not just a content backdrop for the main channel.",
-    metrics: [
-      { label: "Green Screen & Lighting Setup", value: "1" },
-      { label: "Production Rooms", value: "4" },
-      { label: "Editing stations", value: "2 +" },
-      { label: "Rental model", value: "Hourly Rate" },
-    ],
-    milestones: [
-      {
-        tag: "S1",
-        title: "Internal studio first",
-        detail:
-          "A small production space built primarily to make the channel better and faster, before anyone else uses it.",
-      },
-      {
-        tag: "S2",
-        title: "Limited outside access",
-        detail:
-          "Open it up to a handful of local creators and collaborators to see if the demand is actually there.",
-      },
-      {
-        tag: "S3",
-        title: "Rental model tested",
-        detail:
-          "Hourly, membership, workshops - run the numbers against real overhead and figure out what actually works.",
-      },
-      {
-        tag: "S4",
-        title: "Scale or stay small",
-        detail:
-          "If the economics make sense, grow it. If they don't, it stays as infrastructure for the channel and that's fine too.",
-      },
-    ],
+    body: (
+      <div>
+        The next move would be a membership-based production space - green
+        screen, cameras, microphones, a podcast room, editing stations. Like one
+        of those community woodworking or pottery studios but for people making
+        videos. Something local creators or businesses can actually use if they
+        don't have the gear, software, or space to do it on their own.
+        <br />
+        <br />
+        The business model is based on the fact that professional content
+        infrastructure is expensive to own and cheap to share. Most creators -
+        podcasters, TikTokers, small businesses filming product videos - need a
+        green screen room or a treated podcast space for a few hours a week at
+        most. They can't justify owning it. You build it once and rent access
+        repeatedly. <br />
+        <br />
+        And, naturally, it's where I would make all of my videos. Here's what a
+        general concept looks like:
+      </div>
+    ),
+    milestones: [],
+    blueprint: true,
+    blueprintNote: (
+      <>
+        "Why do some of the rooms look like Inception or an Escher drawing?" -
+        you, probably. <br />
+        Look man, I had AI design the floor plan because I'm not an architect.
+        It's not perfect but I hope you get the gist. I've also heard that these
+        days every pitch needs to mention AI or else it's DOA.
+      </>
+    ),
   },
   {
     id: "end-state",
@@ -160,11 +160,11 @@ const phases = [
     label: "End State",
     timeline: "Long term",
     heading: "A Media Operation with a Physical Home.",
-    body: "Long-form videos with a real publishing cadence, short-form distribution that feeds new people into the channel, and a practical space where creators can actually make things. None of it needs to be big. It just needs to work - and each part of it should make the others better, or it probably shouldn't exist.",
+    body: "Long-form videos with a defined cadence, short-form uploads that feed new people into the channel, and a practical space where creators can pay to make things. None of it needs to be big. It just needs to work - and each part of it should make the others better.",
     metrics: [
       { label: "Core business", value: "Media" },
       { label: "Discovery engine", value: "Short-Form" },
-      { label: "Community layer", value: "Workspace" },
+      { label: "A Place to Do it all", value: "Workshop" },
       { label: "Revenue streams", value: "3 +" },
     ],
     milestones: [],
@@ -256,6 +256,16 @@ function Plan() {
                       </div>
                     </div>
                   ))}
+                </div>
+              )}
+
+              {phase.blueprint && (
+                <div className={styles.blueprintSection}>
+                  <div className={styles.blueprintImage}>
+                    <img src="/Studio_Mockup.png" alt="Studio Mockup" />
+                  </div>
+                  <p className={styles.blueprintNote}>{phase.blueprintNote}</p>
+                  <p className={styles.planPhaseCopy}>{phase.expansionBody}</p>
                 </div>
               )}
 

@@ -2,7 +2,9 @@ import { useState } from "react";
 import styles from "./PasswordGate.module.css";
 
 const PASSWORD = "1996";
-console.log("Hey! You found the password in the source. This is intentional - the gate is client-side only as a temporary placeholder while the site is being built.");
+console.log(
+  "Hey there! Welcome to the DevTools. If you're wondering why I left the password in here, this is intentional - the gate is client-side only as a temporary placeholder while the site is being built.",
+);
 
 function PasswordGate({ children }) {
   const [input, setInput] = useState("");

@@ -20,11 +20,12 @@ function Ask() {
           <div className={styles.workGroupLabel}>The Ask</div>
           <p className={styles.roadmapCopy}>
             I post twice a year because I have a day job. Give me the runway to
-            do this full time and here's what that looks like: one long-form
-            video a month, short-form daily, and production support that scales
-            with the channel instead of choking it. The roadmap is real and the
-            ask is simple. Click over on the right there and corporate Brian can
-            explain:
+            do this full time and here's what that looks like: a steady
+            long-form video schedule, short-form content on the daily, and
+            production support that scales with the channel. The Ask is pretty
+            straightforward and, while the roadmap is still conceptual, it's
+            real ( 'The Plan' ). <br />
+            Click over on the right there and corporate Brian can explain:
           </p>
         </div>
 
@@ -59,18 +60,18 @@ function Ask() {
         <p className={styles.roadmapCopy}>
           Build a creator-led media brand around comedy, commentary, and
           internet culture - making thoughtful, funny videos for people who grew
-          up online and never fully left.
+          up online and never fully left. (And potentially save me from going
+          into Big Tech)
         </p>
       </div>
 
       <div className={styles.askStatement}>
         <div className={styles.workGroupLabel}>Problem Statement</div>
         <p className={styles.roadmapCopy}>
-          The channel has already proven it can make distinctive work. The
-          problem is consistency. Right now every video is researched, written,
-          filmed, edited, and published by one person working around a full-time
-          career. When a video ships, the audience responds. Then the channel
-          goes quiet while the next one slowly gets made.
+          The channel isn't consistent. Right now every video is researched,
+          written, filmed, edited, and published by one person working around a
+          full-time career. When a video ships, the audience responds. Then the
+          channel goes quiet while the next one slowly gets made.
         </p>
       </div>
 
@@ -83,7 +84,7 @@ function Ask() {
           <span className={styles.askNumberText}> months</span>
         </div>
         <div className={styles.askDuration}>
-          The point is not an exact number. The point is enough runway to turn
+          The point is not an exact number, but rather enough runway to turn
           this from an occasional high-effort project into a real production
           operation.
         </div>
@@ -98,20 +99,20 @@ function Ask() {
           <li>
             <span className={styles.askListLabel}>Production support</span> -
             Editing and workflow help that removes the single-person bottleneck
-            without sanding off the voice that makes the work worth watching
+            without sanding off the voice that makes the efforts worth watching
           </li>
           <li>
             <span className={styles.askListLabel}>Creative infrastructure</span>{" "}
             - A repeatable system for producing long-form videos, short-form
-            clips, recurring formats, and future live or community-based ideas
+            clips, recurring formats, and a physical space for others to do it
+            too
           </li>
         </ul>
         <div className={styles.divider} />
         <p className={styles.roadmapCopy}>
           <span className={styles.askListLabel}>End state:</span> A consistent,
-          creator-led media operation with a clear voice, a repeatable
-          publishing cycle, and room to grow beyond videos without turning into
-          generic creator-economy slop.
+          profitable, media operation with a clear voice, a repeatable
+          publishing cycle, and room to grow
         </p>
       </div>
     </div>

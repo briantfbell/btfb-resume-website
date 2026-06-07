@@ -29,7 +29,7 @@ const longForm = [
       },
       {
         title: "The Rise of Absurdist Humor",
-        meta: "2,701 views · Dec 2019",
+        meta: "2,701 views · Dec 2019 · 96.8% liked",
         note: '"\My life is nothing I thought it should be and everything I was worried it would become because for 50 seconds I thought there was monsters on the world."\ ',
         link: "https://www.youtube.com/watch?v=P9K35WYeqCs",
         embedId: "P9K35WYeqCs",
