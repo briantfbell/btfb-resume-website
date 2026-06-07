@@ -68,8 +68,6 @@ const phases = [
           "Look at what performed, what didn't, and what's worth doing more of before adding more complexity.",
       },
     ],
-    callout:
-      "The first thing funding buys is the ability to stop treating every upload like it might be the last one.",
   },
   {
     id: "phase-2",
@@ -111,8 +109,6 @@ const phases = [
           "Keep what's working, cut what only sounded good in my notes, figure out where more resources actually help.",
       },
     ],
-    callout:
-      "The weirdness doesn't get professionalized out. It just gets easier to produce.",
   },
   {
     id: "phase-3",
