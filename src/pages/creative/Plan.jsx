@@ -316,9 +316,17 @@ function Plan() {
 
         <br />
 
-        <a href="mailto:briantfbell@gmail.com" className={styles.footerCta}>
-          briantfbell@gmail.com
-        </a>
+        <div className={styles.footerBottom}>
+          <a href="mailto:briantfbell@gmail.com" className={styles.footerCta}>
+            briantfbell@gmail.com
+          </a>
+          <button
+            className={styles.backToTop}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            Back to Top ↑
+          </button>
+        </div>
       </div>
     </div>
   );

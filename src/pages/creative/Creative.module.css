@@ -52,24 +52,28 @@
 .creativeNavBtn {
   font-family: "IBM Plex Mono", monospace;
   font-size: 11px;
+  font-weight: 500;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #9a9080;
+  color: #000000;
+  background: rgba(154, 144, 128, 0.5);
   text-decoration: none;
-  border: 1px solid #d4cfc4;
+  border: 1px solid #000000;
   padding: 10px 20px;
-  border-radius: 2px;
+  border-radius: 3px;
   transition: all 0.2s;
 }
 
 .creativeNavBtn:hover {
   color: #1a1814;
   border-color: #1a1814;
+  background: rgba(154, 144, 128, 0.7);
 }
 
 .creativeNavBtnActive {
-  color: #8b6914;
-  border-color: #8b6914;
+  color: #000000;
+  border-color: #000000;
+  background: rgba(218, 168, 42, 0.5);
 }
 
 .landing {
@@ -611,7 +615,7 @@
 /* ── PLAN NAV ── */
 .planNav {
   display: flex;
-  gap: 8px;
+  gap: 41px;
   flex-wrap: wrap;
   margin-bottom: 48px;
   padding-bottom: 24px;
@@ -626,13 +630,14 @@
 .planNavBtn {
   font-family: "IBM Plex Mono", monospace;
   font-size: 10px;
+  font-weight: 400;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #9a9080;
-  background: none;
-  border: 1px solid #d4cfc4;
+  color: #000000;
+  background: rgba(154, 144, 128, 0.5);
+  border: 1px solid #000000;
   padding: 8px 16px;
-  border-radius: 2px;
+  border-radius: 3px;
   cursor: pointer;
   transition: all 0.2s;
 }
@@ -640,11 +645,13 @@
 .planNavBtn:hover {
   color: #1a1814;
   border-color: #1a1814;
+  background: rgba(154, 144, 128, 0.7);
 }
 
 .planNavBtnActive {
-  color: #8b6914;
-  border-color: #8b6914;
+  color: #000000;
+  border-color: #000000;
+  background: rgba(218, 168, 42, 0.5);
 }
 
 /* ── PLAN METRICS ── */
@@ -738,6 +745,35 @@
 
 .footerCta:hover {
   color: #8b6914;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 50px;
+}
+
+.backToTop {
+  display: inline-block;
+  align-self: flex-end;
+  margin-left: auto;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #000000;
+  background: rgba(154, 144, 128, 0.5);
+  border: 1px solid #000000;
+  padding: 10px 24px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.backToTop:hover {
+  background: rgba(154, 144, 128, 0.7);
 }
 
 /* ── OTHER WORK STUFF ── */
