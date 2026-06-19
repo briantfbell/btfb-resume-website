@@ -5,9 +5,9 @@ export const experience = [
     projected: false,
     role: "Technical Program Manager",
     bullets: [
-      "Served as Platform OIC for a multi-tenant AI dashboard platform functioning as the integration layer for cross-functional AI tool teams across the division",
-      "Coordinated with embedded PMs for each hosted AI capability to align priorities, resolve dependencies, and ensure platform-level delivery timelines",
-      "Reported directly to Platform Director; bridged technical execution and organizational stakeholder requirements across multiple concurrent AI initiatives",
+      "Owns platform strategy and delivery for Zeus, a secure platform purpose-built for drone operations and autonomous systems integration in support of Swarm Forge, one of seven DoD 2026 AI Pace-Setting Projects",
+      "Directs development across hosted capabilities including end-to-end drone ordering, ATO processing, and a 3D-printed parts repository enabling rapid fabrication for unmanned systems",
+      "Coordinates priorities while reporting directly to the AI Division Director; aligns engineering, intelligence, cyber, and joint partner organizations under CDAO AI policy frameworks",
     ],
   },
   {
@@ -35,7 +35,7 @@ export const experience = [
     ),
     projected: false,
     dates: "Sep 2018 - Oct 2022",
-    role: "Logistics & Operations Officer — Fort Sill, OK & Camp Casey, South Korea",
+    role: "Logistics & Operations Officer - Fort Sill, OK & Camp Casey, South Korea",
     bullets: [
       "Served as principal liaison between battalion leadership and 60+ logistics personnel; translated commander intent into execution plans for $12M in mission-critical MLRS heavy-rocket systems",
       "Designed and institutionalized a reporting workflow driving a consistent 98% operational readiness rate; whitepaper formally adopted into Army logistics doctrine",
