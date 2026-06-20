@@ -34,11 +34,11 @@ function Summary() {
           <div className={styles.sectionLabel}>Professional Summary</div>
           <div className={styles.content}>
             <p className={styles.paragraph}>
-              Former U.S. Army officer with eight years of service, including
-              four in Special Operations. Background in logistics, strategic
-              communication, and influencing decision-making across complex,
-              multi-stakeholder environments. Most recently worked within a
-              defense AI and autonomy division, leading platform-level
+              U.S. Army Special Operations Officer. Background in systems
+              engineering, logistics, strategic communication, and influencing
+              decision-making across complex, multi-stakeholder environments.
+              Most recently working under USASOC AI Division to build the Army's
+              first autonomous drone stack while leading platform-level
               integration efforts for a multi-team AI ecosystem. Focused on
               translating complex systems and behavioral insights into products
               that drive user adoption, engagement, and sustained use.
@@ -48,15 +48,15 @@ function Summary() {
           <div className={styles.sectionLabel}>My Approach</div>
           <div className={styles.content}>
             <p className={styles.paragraph}>
-              Hi, I'm Brian. I spent nine years in the Army; the last five of
-              those as a Special Operations Officer. But before that title meant
-              anything, I was doing what Army officers do: managing things I
+              Hi, I'm Brian. I've spent eight years in the Army; the last five
+              of those as a Special Operations Officer. But before earning that
+              title, I was doing what every Army officer does: managing things I
               didn't fully understand yet, coordinating people who knew more
               than me, and figuring out how to make the whole system work
               anyway.
             </p>
             <p className={styles.paragraph}>
-              Officers are generalists by design. You're rarely the subject
+              Officers are generalists by design. Rarely are you the subject
               matter expert in the room - you're just the person responsible for
               the outcome. That means your job is to understand enough of
               everything to ask the right questions, translate between

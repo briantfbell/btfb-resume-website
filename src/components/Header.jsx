@@ -92,7 +92,7 @@ function Header() {
         </div>
         <div>
           <a
-            href="/Bell_Resume_CAO_v3.20.01Q.pdf"
+            href="/Bell_Resume_CAO_v6.20.01Q.pdf"
             download
             className={styles.tabDownload}
           >
