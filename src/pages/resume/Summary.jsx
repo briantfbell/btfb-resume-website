@@ -60,7 +60,7 @@ function Summary() {
               matter expert in the room - you're just the person responsible for
               the outcome. That means your job is to understand enough of
               everything to ask the right questions, translate between
-              specialists, and build a plan that accounts for all of it.
+              subject matter experts, and build a plan that accounts for all of it.
             </p>
             <p className={styles.paragraph}>
               That experience shaped a simple framework I carry into everything

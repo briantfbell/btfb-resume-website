@@ -62,7 +62,7 @@ function Sidebar() {
             <strong>Solutions/Mission Operations Engineering</strong>.
           </p>
           <p className={styles.targetingMeta}>
-            Availible: June 2027 · Open to relocation
+            Available: June 2027 · Open to relocation
           </p>
         </div>
       </div>

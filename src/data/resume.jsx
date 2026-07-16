@@ -1,7 +1,7 @@
 export const experience = [
   {
     dates: "Jan 2026 - Dec 2026",
-    org: "USASOC AI Division | Office of ARSOF Autonomy | Force Modernization Center",
+    org: "USASOC AI Division | Task Force Easy | Defense Autonomous Warfare Group (DAWG)",
     projected: false,
     role: "Technical Program Manager",
     bullets: [
@@ -13,10 +13,10 @@ export const experience = [
   {
     dates: "Jan 2024 - Jan 2026",
     org: (
-      <>
-        1<sup>st</sup> Psychological Operations BN | 7<sup>th</sup> Special
-        Forces Group
-      </>
+        <>
+          1<sup>st</sup> Psychological Operations BN | 7<sup>th</sup> Special
+          Forces Group
+        </>
     ),
     projected: false,
     role: "PSYOP Detachment Commander",
@@ -28,10 +28,10 @@ export const experience = [
   },
   {
     org: (
-      <>
-        2-18<sup>th</sup> Field Artillery Battalion | 75<sup>th</sup> Field
-        Artillery Brigade
-      </>
+        <>
+          2-18<sup>th</sup> Field Artillery Battalion | 75<sup>th</sup> Field
+          Artillery Brigade
+        </>
     ),
     projected: false,
     dates: "Sep 2018 - Oct 2022",
@@ -46,7 +46,7 @@ export const experience = [
     org: "Life Skills for Soldiers | 501(c)(3) Nonprofit",
     projected: false,
     dates: "Feb 2021 - Present",
-    role: "Marketing Director — Volunteer, Remote",
+    role: "Marketing Director - Volunteer, Remote",
     bullets: [
       "Built and scaled an influencer network driving 6,000+ follower growth (+458%) across social channels in six months; oversaw production of 800+ digital assets reaching 10,000+ service members",
       "Validated financial literacy products via 6 pilot programs for 1,000+ users, achieving 16.3% improvement in financial readiness and $30M+ in projected impact",
@@ -57,16 +57,34 @@ export const experience = [
 
 export const competencyGroups = [
   {
-    title: "Engineering",
+    title: "Systems & Product",
     items: [
-      "JavaScript",
-      "React",
+      "Agile Development",
+      "Systems Design",
+      "Rapid Prototyping",
+      "User Requirements",
+
+    ],
+  },
+  {
+    title: "Operations & Leadership",
+    items: [
+      "Strategic Communication",
+      "Operational Planning",
+      "Team Leadership",
+      "Supply Chain & Logistics",
+    ],
+  },
+
+  {
+    title: "Technical Proficiency",
+    items: [
+      "JSX / React",
       "Node.js / Express",
-      "PostgreSQL",
       "REST APIs",
+      "SQL",
       "Git",
       "HTML / CSS",
-      "Docker",
     ],
   },
   {
@@ -79,28 +97,10 @@ export const competencyGroups = [
     ],
   },
   {
-    title: "Systems & Product",
-    items: [
-      "Process Design",
-      "Rapid Prototyping",
-      "User Requirements",
-      "Agile Development",
-    ],
-  },
-  {
-    title: "Operations & Leadership",
-    items: [
-      "Strategic Communication",
-      "Operational Planning",
-      "Team Leadership",
-      "Supply Chain & Logistics",
-    ],
-  },
-  {
     title: "Creative & Media",
     items: [
-      "Adobe Premiere Pro",
       "Adobe Photoshop",
+      "Premiere Pro",
       "Post-Production",
       "Brand Development",
       "Content Strategy",

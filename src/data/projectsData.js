@@ -21,7 +21,7 @@ export const projects = [
     chips: ["Solo Project"],
     description:
       "Personal portfolio and resume site built from scratch in React with Vite. Features a dark-mode resume, project showcase, professional summary, and a separate editorial creative section. Deployed on Netlify with a custom domain.",
-    tags: ["React.JS", "CSS Modules", "Cloudfare", "Netlify"],
+    tags: ["React.JS", "CSS Modules", "Cloudflare", "Netlify"],
     status: "Live at briantfbell.io",
     link: "https://github.com/briantfbell/btfb-resume-website",
     images: ["/project-images/briantfbell.io_resume_project_photo.png"],
