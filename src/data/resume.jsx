@@ -1,7 +1,7 @@
 export const experience = [
   {
     dates: "Jan 2026 - Dec 2026",
-    org: "USASOC AI Division | Task Force Easy | Defense Autonomous Warfare Group (DAWG)",
+    org: "USASOC AI Division",
     projected: false,
     role: "Technical Program Manager",
     bullets: [

@@ -79,7 +79,7 @@ function Header() {
               isActive ? styles.tabActive : styles.tab
             }
           >
-            Resume
+            Resumé
           </NavLink>
           <NavLink
             to="/projects"
@@ -97,7 +97,7 @@ function Header() {
             className={styles.tabDownload}
           >
             <FileDown size={15} style={{ marginRight: "8px" }} />
-            <span>Resume.PDF</span>
+            <span>Resumé.PDF</span>
           </a>
         </div>
       </div>
