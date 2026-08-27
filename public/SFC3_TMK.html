@@ -62,50 +62,53 @@
 </head>
 <body>
 <!-- PASSWORD GATE -->
-<div id="gate" style="
-  position: fixed; inset: 0; z-index: 9999;
-  background: #0c1116;
-  display: flex; flex-direction: column;
-  align-items: center; justify-content: center;
-  gap: 16px;
-  font-family: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace;
-">
-  <div style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #8fbf3f;">
-    Swarm Forge Crucible 3: 3D TMK
-  </div>
-  <div style="display: flex; gap: 0;">
-    <input id="gate-input" type="password" placeholder="access code"
-      style="
-        background: rgba(18,24,32,0.82); border: 1px solid #2a3543;
-        border-right: none; color: #e6edf5;
-        font-family: inherit; font-size: 13px;
-        padding: 10px 14px; outline: none; width: 220px;
-      "
-      onkeydown="if(event.key==='Enter') checkGate()"
-    />
-    <button onclick="checkGate()" style="
-      background: rgba(18,24,32,0.82); border: 1px solid #2a3543;
-      color: #8fbf3f; font-family: inherit; font-size: 13px;
-      padding: 10px 14px; cursor: pointer;
-    ">→</button>
-  </div>
-  <div id="gate-err" style="font-size: 11px; color: #f0a3a3; display: none;">
-    incorrect.
-  </div>
-</div>
 
-<script>
-  function checkGate() {
-    const input = document.getElementById('gate-input');
-    const err = document.getElementById('gate-err');
-    if (input.value === '1492') {
-      document.getElementById('gate').style.display = 'none';
-    } else {
-      err.style.display = 'block';
-      input.value = '';
-      input.focus();
-    }
-  }
+<!--<div id="gate" style="-->
+<!--  position: fixed; inset: 0; z-index: 9999;-->
+<!--  background: #0c1116;-->
+<!--  display: flex; flex-direction: column;-->
+<!--  align-items: center; justify-content: center;-->
+<!--  gap: 16px;-->
+<!--  font-family: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, Consolas, monospace;-->
+<!--">-->
+<!--  <div style="font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: #8fbf3f;">-->
+<!--    Swarm Forge Crucible 3: 3D TMK-->
+<!--  </div>-->
+<!--  <div style="display: flex; gap: 0;">-->
+<!--    <input id="gate-input" type="password" placeholder="access code"-->
+<!--      style="-->
+<!--        background: rgba(18,24,32,0.82); border: 1px solid #2a3543;-->
+<!--        border-right: none; color: #e6edf5;-->
+<!--        font-family: inherit; font-size: 13px;-->
+<!--        padding: 10px 14px; outline: none; width: 220px;-->
+<!--      "-->
+<!--      onkeydown="if(event.key==='Enter') checkGate()"-->
+<!--    />-->
+<!--    <button onclick="checkGate()" style="-->
+<!--      background: rgba(18,24,32,0.82); border: 1px solid #2a3543;-->
+<!--      color: #8fbf3f; font-family: inherit; font-size: 13px;-->
+<!--      padding: 10px 14px; cursor: pointer;-->
+<!--    ">→</button>-->
+<!--  </div>-->
+<!--  <div id="gate-err" style="font-size: 11px; color: #f0a3a3; display: none;">-->
+<!--    incorrect.-->
+<!--  </div>-->
+<!--</div>-->
+
+<!--<script>-->
+<!--  function checkGate() {-->
+<!--    const input = document.getElementById('gate-input');-->
+<!--    const err = document.getElementById('gate-err');-->
+<!--    if (input.value === '1492') {-->
+<!--      document.getElementById('gate').style.display = 'none';-->
+<!--    } else {-->
+<!--      err.style.display = 'block';-->
+<!--      input.value = '';-->
+<!--      input.focus();-->
+<!--    }-->
+<!--  }-->
+
+<!-- END PASSWORD GATE -->
 </script>
 <div id="wrap"></div>
 
