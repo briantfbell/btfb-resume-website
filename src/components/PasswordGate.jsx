@@ -9,7 +9,7 @@ console.log(
 function PasswordGate({ children }) {
   const [input, setInput] = useState("");
   // This is the on/off switch for the password gate
-  const [unlocked, setUnlocked] = useState(false);
+  const [unlocked, setUnlocked] = useState(true);
   const [error, setError] = useState(false);
 
   const handleSubmit = (e) => {

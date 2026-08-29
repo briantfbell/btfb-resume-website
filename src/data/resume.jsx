@@ -5,18 +5,18 @@ export const experience = [
     projected: false,
     role: "Technical Program Manager",
     bullets: [
-      "Owns platform strategy and delivery for Zeus, a secure platform purpose-built for drone operations and autonomous systems integration in support of Swarm Forge, one of seven DoD 2026 AI Pace-Setting Projects",
-      "Directs development across hosted capabilities including end-to-end drone ordering, ATO processing, and a 3D-printed parts repository enabling rapid fabrication for unmanned systems",
+      "Lead exercise planner for Swarm Forge Crucible 3, one of seven DoD 2026 AI Pace-Setting Projects evaluating AI-enabled autonomous systems in multi-domain operations.",
+      "Owns platform strategy and delivery for Zeus, a secure platform purpose-built for drone operations and autonomous systems integration. Directing development across hosted capabilities including end-to-end drone ordering, ATO processing, and a 3D-printed parts repository enabling rapid fabrication for unmanned systems",
       "Coordinates priorities while reporting directly to the AI Division Director; aligns engineering, intelligence, cyber, and joint partner organizations under CDAO AI policy frameworks",
     ],
   },
   {
     dates: "Jan 2024 - Jan 2026",
     org: (
-        <>
-          1<sup>st</sup> Psychological Operations BN | 7<sup>th</sup> Special
-          Forces Group
-        </>
+      <>
+        1<sup>st</sup> Psychological Operations BN | 7<sup>th</sup> Special
+        Forces Group
+      </>
     ),
     projected: false,
     role: "PSYOP Detachment Commander",
@@ -28,10 +28,10 @@ export const experience = [
   },
   {
     org: (
-        <>
-          2-18<sup>th</sup> Field Artillery Battalion | 75<sup>th</sup> Field
-          Artillery Brigade
-        </>
+      <>
+        2-18<sup>th</sup> Field Artillery Battalion | 75<sup>th</sup> Field
+        Artillery Brigade
+      </>
     ),
     projected: false,
     dates: "Sep 2018 - Oct 2022",
@@ -63,7 +63,6 @@ export const competencyGroups = [
       "Systems Design",
       "Rapid Prototyping",
       "User Requirements",
-
     ],
   },
   {
