@@ -5,7 +5,7 @@ import styles from "./Header.module.css";
 function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.eyebrow}>Resume / Portfolio</div>
+      <div className={styles.eyebrow}>Resumé / Portfolio</div>
       <h1 className={styles.name}>
         Brian Thomas Fernandez <span>Bell</span>
       </h1>

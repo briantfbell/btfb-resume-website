@@ -17,6 +17,16 @@ export const projects = [
     video: "https://www.youtube.com/embed/4wu_Znmez-Q?rel=0&modestbranding=1",
   },
   {
+    name: "Virtual Terrain Model Kit: 3D Map Visualizer",
+    chips: ["Vibe-Coded", "Rapid Prototyping"],
+    description:
+      "Single-file 3D terrain model that turns real coordinates into a navigable browser scene, replacing two hours of manual TMK arts and crafts with a working product that shipped the same day. Now carries a four-ship drone swarm simulator that flies the exact 'ideal' lane for Swarm Forge Crucible 3.",
+    tags: ["Military", "Leadership", "Operations", "Prototyping", "Autonomy"],
+    status: "Rebuilt Sep 2026 for Swarm Forge Crucible 3 rehearsals",
+    link: "https://briantfbell.io/sfc3_tmk.html",
+    images: ["/project-images/VTMK_Project_image.png"],
+  },
+  {
     name: "This Website - briantfbell.io - Portfolio & Resume",
     chips: ["Solo Project"],
     description:
@@ -28,6 +38,7 @@ export const projects = [
   },
   {
     name: "The Maintenance Control Officer: A Guide",
+    chips: ["Technical Writing (Pre-AI)"],
     description:
       "Practical guide for junior officers taking on the MCO role. Written as a whitepaper and formally adopted into U.S. Army Logistics BOLC doctrine in 2020.",
     tags: ["Military", "Leadership", "Operations", "Doctrine", "Logistics"],
